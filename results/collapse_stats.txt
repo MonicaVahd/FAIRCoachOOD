@@ -1,0 +1,300 @@
+Source: results/confusion_all_models.txt
+Cross-check: results/ood_results_corrected.csv
+Parsed cells: 198
+
+========================================================================
+CROSS-CHECK vs ood_results_corrected.csv status column
+========================================================================
+All 198 comparable cells match exactly (FC<->DEGΓÇá, PC<->~DEG, OK<->OK).
+
+========================================================================
+AUTHORITATIVE TOTALS (198 OOD experiments)
+========================================================================
+  FC  (full collapse, 0 preds for one class):     141
+  PC  (partial collapse, 1ΓÇô5 preds for one class): 13
+  Collapsed (FC + PC):                           154
+  OK  (genuine):                                 44
+  Total:                                         198
+  Collapse percentage (FC+PC)/Total:             77.777778%
+  FC percentage:                                 71.212121%
+  PC percentage:                                 6.565657%
+  OK percentage:                                 22.222222%
+
+========================================================================
+PER-MODEL BREAKDOWN
+========================================================================
+  Model            FC   PC   OK Total  Collapse%
+  --------------------------------------------
+  ST-GCN           16    2    4    22     81.82%
+  CTR-GCN          19    0    3    22     86.36%
+  InfoGCN          15    1    6    22     72.73%
+  BlockGCN         13    1    8    22     63.64%
+  HD-GCN           15    1    6    22     72.73%
+  ProtoGCN         18    0    4    22     81.82%
+  SkateFormer      10    4    8    22     63.64%
+  HyperFormer      17    2    3    22     86.36%
+  FreqMixFormer    18    2    2    22     90.91%
+
+========================================================================
+PER-CONDITION BREAKDOWN
+========================================================================
+  Cond     FC   PC   OK Total  Collapse%
+  ------------------------------------
+  B1        8    0    1     9     88.89%
+  B2        5    0    4     9     55.56%
+  B3        9    0    0     9    100.00%
+  B4        6    1    2     9     77.78%
+  B5        7    0    2     9     77.78%
+  B6        6    2    1     9     88.89%
+  B7        7    2    0     9    100.00%
+  B8        7    1    1     9     88.89%
+  B9        7    0    2     9     77.78%
+  B10       8    0    1     9     88.89%
+  B11       8    0    1     9     88.89%
+  B12       8    1    0     9    100.00%
+  C1        3    0    6     9     33.33%
+  C2        5    1    3     9     66.67%
+  C3        7    0    2     9     77.78%
+  C4        3    1    5     9     44.44%
+  C5        6    0    3     9     66.67%
+  C6        8    0    1     9     88.89%
+  C7        8    0    1     9     88.89%
+  C8        2    2    5     9     44.44%
+  C9        5    1    3     9     66.67%
+  C10       8    1    0     9    100.00%
+
+========================================================================
+FULL PER-CELL GRID (model ├ù condition ΓåÆ FC / PC / OK)
+  pred_correct=TP+FP, pred_incorrect=TN+FN
+========================================================================
+                  B1  B2  B3  B4  B5  B6  B7  B8  B9 B10 B11 B12  C1  C2  C3  C4  C5  C6  C7  C8  C9 C10
+  ------------------------------------------------------------------------------------------------------
+  ST-GCN          FC  FC  FC  PC  FC  FC  FC  FC  FC  FC  FC  FC  OK  PC  FC  OK  OK  FC  FC  OK  FC  FC
+  CTR-GCN         FC  FC  FC  FC  FC  OK  FC  FC  FC  FC  FC  FC  OK  FC  FC  OK  FC  FC  FC  FC  FC  FC
+  InfoGCN         FC  FC  FC  FC  FC  PC  FC  FC  FC  FC  FC  FC  FC  OK  OK  OK  OK  FC  FC  OK  OK  FC
+  BlockGCN        FC  OK  FC  FC  OK  PC  FC  OK  OK  FC  FC  FC  FC  OK  FC  FC  FC  FC  OK  OK  OK  FC
+  HD-GCN          FC  OK  FC  FC  OK  FC  PC  FC  FC  FC  OK  FC  OK  FC  FC  OK  FC  FC  FC  OK  FC  FC
+  ProtoGCN        OK  OK  FC  FC  FC  FC  FC  FC  FC  FC  FC  FC  OK  FC  FC  FC  FC  FC  FC  OK  FC  FC
+  SkateFormer     FC  OK  FC  OK  FC  FC  PC  PC  OK  OK  FC  PC  OK  OK  OK  FC  FC  FC  FC  FC  OK  PC
+  HyperFormer     FC  FC  FC  FC  FC  FC  FC  FC  FC  FC  FC  FC  OK  FC  FC  OK  FC  OK  FC  PC  PC  FC
+  FreqMixFormer   FC  FC  FC  OK  FC  FC  FC  FC  FC  FC  FC  FC  FC  FC  FC  PC  OK  FC  FC  PC  FC  FC
+
+========================================================================
+DETAILED GRID (collapse | pred_correct | pred_incorrect)
+========================================================================
+
+  [ST-GCN]
+    B1: FC  pred_correct=191  pred_incorrect=  0  (TP=130 TN=0 FP=61 FN=0)
+    B2: FC  pred_correct=  0  pred_incorrect=282  (TP=0 TN=120 FP=0 FN=162)
+    B3: FC  pred_correct=141  pred_incorrect=  0  (TP=41 TN=0 FP=100 FN=0)
+    B4: PC  pred_correct=  2  pred_incorrect=280  (TP=1 TN=119 FP=1 FN=161)
+    B5: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    B6: FC  pred_correct=  0  pred_incorrect=191  (TP=0 TN=61 FP=0 FN=130)
+    B7: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    B8: FC  pred_correct=  0  pred_incorrect=191  (TP=0 TN=61 FP=0 FN=130)
+    B9: FC  pred_correct=  0  pred_incorrect=282  (TP=0 TN=120 FP=0 FN=162)
+    B10: FC  pred_correct=  0  pred_incorrect=200  (TP=0 TN=100 FP=0 FN=100)
+    B11: FC  pred_correct=200  pred_incorrect=  0  (TP=100 TN=0 FP=100 FN=0)
+    B12: FC  pred_correct=  0  pred_incorrect=200  (TP=0 TN=100 FP=0 FN=100)
+    C1: OK  pred_correct= 24  pred_incorrect=258  (TP=6 TN=102 FP=18 FN=156)
+    C2: PC  pred_correct=  1  pred_incorrect=190  (TP=0 TN=60 FP=1 FN=130)
+    C3: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    C4: OK  pred_correct= 68  pred_incorrect=214  (TP=42 TN=94 FP=26 FN=120)
+    C5: OK  pred_correct=234  pred_incorrect= 48  (TP=124 TN=10 FP=110 FN=38)
+    C6: FC  pred_correct=200  pred_incorrect=  0  (TP=100 TN=0 FP=100 FN=0)
+    C7: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    C8: OK  pred_correct=136  pred_incorrect=146  (TP=88 TN=72 FP=48 FN=74)
+    C9: FC  pred_correct=  0  pred_incorrect=191  (TP=0 TN=61 FP=0 FN=130)
+    C10: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+
+  [CTR-GCN]
+    B1: FC  pred_correct=  0  pred_incorrect=191  (TP=0 TN=61 FP=0 FN=130)
+    B2: FC  pred_correct=  0  pred_incorrect=282  (TP=0 TN=120 FP=0 FN=162)
+    B3: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    B4: FC  pred_correct=  0  pred_incorrect=282  (TP=0 TN=120 FP=0 FN=162)
+    B5: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    B6: OK  pred_correct= 57  pred_incorrect=134  (TP=37 TN=41 FP=20 FN=93)
+    B7: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    B8: FC  pred_correct=  0  pred_incorrect=191  (TP=0 TN=61 FP=0 FN=130)
+    B9: FC  pred_correct=  0  pred_incorrect=282  (TP=0 TN=120 FP=0 FN=162)
+    B10: FC  pred_correct=  0  pred_incorrect=200  (TP=0 TN=100 FP=0 FN=100)
+    B11: FC  pred_correct=200  pred_incorrect=  0  (TP=100 TN=0 FP=100 FN=0)
+    B12: FC  pred_correct=  0  pred_incorrect=200  (TP=0 TN=100 FP=0 FN=100)
+    C1: OK  pred_correct=233  pred_incorrect= 49  (TP=135 TN=22 FP=98 FN=27)
+    C2: FC  pred_correct=  0  pred_incorrect=191  (TP=0 TN=61 FP=0 FN=130)
+    C3: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    C4: OK  pred_correct=160  pred_incorrect=122  (TP=98 TN=58 FP=62 FN=64)
+    C5: FC  pred_correct=  0  pred_incorrect=282  (TP=0 TN=120 FP=0 FN=162)
+    C6: FC  pred_correct=200  pred_incorrect=  0  (TP=100 TN=0 FP=100 FN=0)
+    C7: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    C8: FC  pred_correct=  0  pred_incorrect=282  (TP=0 TN=120 FP=0 FN=162)
+    C9: FC  pred_correct=  0  pred_incorrect=191  (TP=0 TN=61 FP=0 FN=130)
+    C10: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+
+  [InfoGCN]
+    B1: FC  pred_correct=  0  pred_incorrect=191  (TP=0 TN=61 FP=0 FN=130)
+    B2: FC  pred_correct=282  pred_incorrect=  0  (TP=162 TN=0 FP=120 FN=0)
+    B3: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    B4: FC  pred_correct=  0  pred_incorrect=282  (TP=0 TN=120 FP=0 FN=162)
+    B5: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    B6: PC  pred_correct=189  pred_incorrect=  2  (TP=130 TN=2 FP=59 FN=0)
+    B7: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    B8: FC  pred_correct=  0  pred_incorrect=191  (TP=0 TN=61 FP=0 FN=130)
+    B9: FC  pred_correct=  0  pred_incorrect=282  (TP=0 TN=120 FP=0 FN=162)
+    B10: FC  pred_correct=  0  pred_incorrect=200  (TP=0 TN=100 FP=0 FN=100)
+    B11: FC  pred_correct=  0  pred_incorrect=200  (TP=0 TN=100 FP=0 FN=100)
+    B12: FC  pred_correct=200  pred_incorrect=  0  (TP=100 TN=0 FP=100 FN=0)
+    C1: FC  pred_correct=  0  pred_incorrect=282  (TP=0 TN=120 FP=0 FN=162)
+    C2: OK  pred_correct= 41  pred_incorrect=150  (TP=30 TN=50 FP=11 FN=100)
+    C3: OK  pred_correct= 10  pred_incorrect=131  (TP=4 TN=94 FP=6 FN=37)
+    C4: OK  pred_correct=132  pred_incorrect=150  (TP=80 TN=68 FP=52 FN=82)
+    C5: OK  pred_correct=104  pred_incorrect=178  (TP=59 TN=75 FP=45 FN=103)
+    C6: FC  pred_correct=200  pred_incorrect=  0  (TP=100 TN=0 FP=100 FN=0)
+    C7: FC  pred_correct=141  pred_incorrect=  0  (TP=41 TN=0 FP=100 FN=0)
+    C8: OK  pred_correct=  6  pred_incorrect=276  (TP=1 TN=115 FP=5 FN=161)
+    C9: OK  pred_correct=180  pred_incorrect= 11  (TP=127 TN=8 FP=53 FN=3)
+    C10: FC  pred_correct=141  pred_incorrect=  0  (TP=41 TN=0 FP=100 FN=0)
+
+  [BlockGCN]
+    B1: FC  pred_correct=  0  pred_incorrect=191  (TP=0 TN=61 FP=0 FN=130)
+    B2: OK  pred_correct=263  pred_incorrect= 19  (TP=158 TN=15 FP=105 FN=4)
+    B3: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    B4: FC  pred_correct=  0  pred_incorrect=282  (TP=0 TN=120 FP=0 FN=162)
+    B5: OK  pred_correct= 64  pred_incorrect= 77  (TP=22 TN=58 FP=42 FN=19)
+    B6: PC  pred_correct=190  pred_incorrect=  1  (TP=130 TN=1 FP=60 FN=0)
+    B7: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    B8: OK  pred_correct= 26  pred_incorrect=165  (TP=16 TN=51 FP=10 FN=114)
+    B9: OK  pred_correct=  6  pred_incorrect=276  (TP=4 TN=118 FP=2 FN=158)
+    B10: FC  pred_correct=  0  pred_incorrect=200  (TP=0 TN=100 FP=0 FN=100)
+    B11: FC  pred_correct=  0  pred_incorrect=200  (TP=0 TN=100 FP=0 FN=100)
+    B12: FC  pred_correct=200  pred_incorrect=  0  (TP=100 TN=0 FP=100 FN=0)
+    C1: FC  pred_correct=282  pred_incorrect=  0  (TP=162 TN=0 FP=120 FN=0)
+    C2: OK  pred_correct= 11  pred_incorrect=180  (TP=11 TN=61 FP=0 FN=119)
+    C3: FC  pred_correct=141  pred_incorrect=  0  (TP=41 TN=0 FP=100 FN=0)
+    C4: FC  pred_correct=282  pred_incorrect=  0  (TP=162 TN=0 FP=120 FN=0)
+    C5: FC  pred_correct=282  pred_incorrect=  0  (TP=162 TN=0 FP=120 FN=0)
+    C6: FC  pred_correct=200  pred_incorrect=  0  (TP=100 TN=0 FP=100 FN=0)
+    C7: OK  pred_correct=118  pred_incorrect= 23  (TP=29 TN=11 FP=89 FN=12)
+    C8: OK  pred_correct=181  pred_incorrect=101  (TP=98 TN=37 FP=83 FN=64)
+    C9: OK  pred_correct= 23  pred_incorrect=168  (TP=13 TN=51 FP=10 FN=117)
+    C10: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+
+  [HD-GCN]
+    B1: FC  pred_correct=191  pred_incorrect=  0  (TP=130 TN=0 FP=61 FN=0)
+    B2: OK  pred_correct=169  pred_incorrect=113  (TP=106 TN=57 FP=63 FN=56)
+    B3: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    B4: FC  pred_correct=282  pred_incorrect=  0  (TP=162 TN=0 FP=120 FN=0)
+    B5: OK  pred_correct=113  pred_incorrect= 28  (TP=32 TN=19 FP=81 FN=9)
+    B6: FC  pred_correct=191  pred_incorrect=  0  (TP=130 TN=0 FP=61 FN=0)
+    B7: PC  pred_correct=140  pred_incorrect=  1  (TP=41 TN=1 FP=99 FN=0)
+    B8: FC  pred_correct=  0  pred_incorrect=191  (TP=0 TN=61 FP=0 FN=130)
+    B9: FC  pred_correct=  0  pred_incorrect=282  (TP=0 TN=120 FP=0 FN=162)
+    B10: FC  pred_correct=200  pred_incorrect=  0  (TP=100 TN=0 FP=100 FN=0)
+    B11: OK  pred_correct=189  pred_incorrect= 11  (TP=100 TN=11 FP=89 FN=0)
+    B12: FC  pred_correct=200  pred_incorrect=  0  (TP=100 TN=0 FP=100 FN=0)
+    C1: OK  pred_correct=105  pred_incorrect=177  (TP=63 TN=78 FP=42 FN=99)
+    C2: FC  pred_correct=  0  pred_incorrect=191  (TP=0 TN=61 FP=0 FN=130)
+    C3: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    C4: OK  pred_correct=202  pred_incorrect= 80  (TP=121 TN=39 FP=81 FN=41)
+    C5: FC  pred_correct=  0  pred_incorrect=282  (TP=0 TN=120 FP=0 FN=162)
+    C6: FC  pred_correct=200  pred_incorrect=  0  (TP=100 TN=0 FP=100 FN=0)
+    C7: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    C8: OK  pred_correct=  6  pred_incorrect=276  (TP=0 TN=114 FP=6 FN=162)
+    C9: FC  pred_correct=  0  pred_incorrect=191  (TP=0 TN=61 FP=0 FN=130)
+    C10: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+
+  [ProtoGCN]
+    B1: OK  pred_correct= 16  pred_incorrect=175  (TP=16 TN=61 FP=0 FN=114)
+    B2: OK  pred_correct=171  pred_incorrect=111  (TP=108 TN=57 FP=63 FN=54)
+    B3: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    B4: FC  pred_correct=  0  pred_incorrect=282  (TP=0 TN=120 FP=0 FN=162)
+    B5: FC  pred_correct=141  pred_incorrect=  0  (TP=41 TN=0 FP=100 FN=0)
+    B6: FC  pred_correct=  0  pred_incorrect=191  (TP=0 TN=61 FP=0 FN=130)
+    B7: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    B8: FC  pred_correct=  0  pred_incorrect=191  (TP=0 TN=61 FP=0 FN=130)
+    B9: FC  pred_correct=  0  pred_incorrect=282  (TP=0 TN=120 FP=0 FN=162)
+    B10: FC  pred_correct=  0  pred_incorrect=200  (TP=0 TN=100 FP=0 FN=100)
+    B11: FC  pred_correct=200  pred_incorrect=  0  (TP=100 TN=0 FP=100 FN=0)
+    B12: FC  pred_correct=200  pred_incorrect=  0  (TP=100 TN=0 FP=100 FN=0)
+    C1: OK  pred_correct= 47  pred_incorrect=235  (TP=31 TN=104 FP=16 FN=131)
+    C2: FC  pred_correct=  0  pred_incorrect=191  (TP=0 TN=61 FP=0 FN=130)
+    C3: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    C4: FC  pred_correct=  0  pred_incorrect=282  (TP=0 TN=120 FP=0 FN=162)
+    C5: FC  pred_correct=  0  pred_incorrect=282  (TP=0 TN=120 FP=0 FN=162)
+    C6: FC  pred_correct=200  pred_incorrect=  0  (TP=100 TN=0 FP=100 FN=0)
+    C7: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    C8: OK  pred_correct= 44  pred_incorrect=238  (TP=20 TN=96 FP=24 FN=142)
+    C9: FC  pred_correct=  0  pred_incorrect=191  (TP=0 TN=61 FP=0 FN=130)
+    C10: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+
+  [SkateFormer]
+    B1: FC  pred_correct=  0  pred_incorrect=191  (TP=0 TN=61 FP=0 FN=130)
+    B2: OK  pred_correct=263  pred_incorrect= 19  (TP=147 TN=4 FP=116 FN=15)
+    B3: FC  pred_correct=141  pred_incorrect=  0  (TP=41 TN=0 FP=100 FN=0)
+    B4: OK  pred_correct=267  pred_incorrect= 15  (TP=156 TN=9 FP=111 FN=6)
+    B5: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    B6: FC  pred_correct=191  pred_incorrect=  0  (TP=130 TN=0 FP=61 FN=0)
+    B7: PC  pred_correct=  2  pred_incorrect=139  (TP=0 TN=98 FP=2 FN=41)
+    B8: PC  pred_correct=186  pred_incorrect=  5  (TP=125 TN=0 FP=61 FN=5)
+    B9: OK  pred_correct= 30  pred_incorrect=252  (TP=14 TN=104 FP=16 FN=148)
+    B10: OK  pred_correct=192  pred_incorrect=  8  (TP=100 TN=8 FP=92 FN=0)
+    B11: FC  pred_correct=  0  pred_incorrect=200  (TP=0 TN=100 FP=0 FN=100)
+    B12: PC  pred_correct=199  pred_incorrect=  1  (TP=100 TN=1 FP=99 FN=0)
+    C1: OK  pred_correct= 71  pred_incorrect=211  (TP=40 TN=89 FP=31 FN=122)
+    C2: OK  pred_correct=173  pred_incorrect= 18  (TP=115 TN=3 FP=58 FN=15)
+    C3: OK  pred_correct=130  pred_incorrect= 11  (TP=40 TN=10 FP=90 FN=1)
+    C4: FC  pred_correct=  0  pred_incorrect=282  (TP=0 TN=120 FP=0 FN=162)
+    C5: FC  pred_correct=282  pred_incorrect=  0  (TP=162 TN=0 FP=120 FN=0)
+    C6: FC  pred_correct=  0  pred_incorrect=200  (TP=0 TN=100 FP=0 FN=100)
+    C7: FC  pred_correct=141  pred_incorrect=  0  (TP=41 TN=0 FP=100 FN=0)
+    C8: FC  pred_correct=282  pred_incorrect=  0  (TP=162 TN=0 FP=120 FN=0)
+    C9: OK  pred_correct=138  pred_incorrect= 53  (TP=93 TN=16 FP=45 FN=37)
+    C10: PC  pred_correct=  2  pred_incorrect=139  (TP=0 TN=98 FP=2 FN=41)
+
+  [HyperFormer]
+    B1: FC  pred_correct=  0  pred_incorrect=191  (TP=0 TN=61 FP=0 FN=130)
+    B2: FC  pred_correct=  0  pred_incorrect=282  (TP=0 TN=120 FP=0 FN=162)
+    B3: FC  pred_correct=141  pred_incorrect=  0  (TP=41 TN=0 FP=100 FN=0)
+    B4: FC  pred_correct=  0  pred_incorrect=282  (TP=0 TN=120 FP=0 FN=162)
+    B5: FC  pred_correct=141  pred_incorrect=  0  (TP=41 TN=0 FP=100 FN=0)
+    B6: FC  pred_correct=  0  pred_incorrect=191  (TP=0 TN=61 FP=0 FN=130)
+    B7: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    B8: FC  pred_correct=  0  pred_incorrect=191  (TP=0 TN=61 FP=0 FN=130)
+    B9: FC  pred_correct=  0  pred_incorrect=282  (TP=0 TN=120 FP=0 FN=162)
+    B10: FC  pred_correct=  0  pred_incorrect=200  (TP=0 TN=100 FP=0 FN=100)
+    B11: FC  pred_correct=200  pred_incorrect=  0  (TP=100 TN=0 FP=100 FN=0)
+    B12: FC  pred_correct=  0  pred_incorrect=200  (TP=0 TN=100 FP=0 FN=100)
+    C1: OK  pred_correct=146  pred_incorrect=136  (TP=93 TN=67 FP=53 FN=69)
+    C2: FC  pred_correct=  0  pred_incorrect=191  (TP=0 TN=61 FP=0 FN=130)
+    C3: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    C4: OK  pred_correct=146  pred_incorrect=136  (TP=82 TN=56 FP=64 FN=80)
+    C5: FC  pred_correct=  0  pred_incorrect=282  (TP=0 TN=120 FP=0 FN=162)
+    C6: OK  pred_correct=  6  pred_incorrect=194  (TP=0 TN=94 FP=6 FN=100)
+    C7: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    C8: PC  pred_correct=  3  pred_incorrect=279  (TP=0 TN=117 FP=3 FN=162)
+    C9: PC  pred_correct=  2  pred_incorrect=189  (TP=0 TN=59 FP=2 FN=130)
+    C10: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+
+  [FreqMixFormer]
+    B1: FC  pred_correct=  0  pred_incorrect=191  (TP=0 TN=61 FP=0 FN=130)
+    B2: FC  pred_correct=  0  pred_incorrect=282  (TP=0 TN=120 FP=0 FN=162)
+    B3: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    B4: OK  pred_correct=169  pred_incorrect=113  (TP=99 TN=50 FP=70 FN=63)
+    B5: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    B6: FC  pred_correct=  0  pred_incorrect=191  (TP=0 TN=61 FP=0 FN=130)
+    B7: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    B8: FC  pred_correct=  0  pred_incorrect=191  (TP=0 TN=61 FP=0 FN=130)
+    B9: FC  pred_correct=282  pred_incorrect=  0  (TP=162 TN=0 FP=120 FN=0)
+    B10: FC  pred_correct=  0  pred_incorrect=200  (TP=0 TN=100 FP=0 FN=100)
+    B11: FC  pred_correct=  0  pred_incorrect=200  (TP=0 TN=100 FP=0 FN=100)
+    B12: FC  pred_correct=  0  pred_incorrect=200  (TP=0 TN=100 FP=0 FN=100)
+    C1: FC  pred_correct=  0  pred_incorrect=282  (TP=0 TN=120 FP=0 FN=162)
+    C2: FC  pred_correct=  0  pred_incorrect=191  (TP=0 TN=61 FP=0 FN=130)
+    C3: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    C4: PC  pred_correct=  3  pred_incorrect=279  (TP=0 TN=117 FP=3 FN=162)
+    C5: OK  pred_correct= 55  pred_incorrect=227  (TP=23 TN=88 FP=32 FN=139)
+    C6: FC  pred_correct=200  pred_incorrect=  0  (TP=100 TN=0 FP=100 FN=0)
+    C7: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)
+    C8: PC  pred_correct=  5  pred_incorrect=277  (TP=1 TN=116 FP=4 FN=161)
+    C9: FC  pred_correct=  0  pred_incorrect=191  (TP=0 TN=61 FP=0 FN=130)
+    C10: FC  pred_correct=  0  pred_incorrect=141  (TP=0 TN=100 FP=0 FN=41)

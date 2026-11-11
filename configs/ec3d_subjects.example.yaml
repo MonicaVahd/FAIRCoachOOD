@@ -1,0 +1,13 @@
+# ec3d_subjects.example.yaml -- EC3D subject list for the leave-one-subject-out (LOSO) rounds.
+#
+# Copy this file to configs/ec3d_subjects.yaml (git-ignored) and replace S1..S4 with the four subject
+# names exactly as they appear in column 1 of the `labels` array of your copy of the EC3D pickle.
+# The names are NOT stored in this repository.
+#
+# The order of the list defines the LOSO round numbers:
+#   round 1 -> test set = all repetitions of the first subject, round 2 -> the second subject, and so on.
+subjects:
+  - S1
+  - S2
+  - S3
+  - S4

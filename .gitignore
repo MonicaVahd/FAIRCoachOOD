@@ -1,0 +1,72 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Data and derived artifacts (never committed)
+output/
+datasets/
+*.npy
+*.npy.gz
+*.pkl
+*.pickle
+
+# Checkpoints (never committed)
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.bin
+
+# Logs
+*.log
+overnight_training_log.txt
+smoke_*.log
+
+# Secrets and private config
+.env
+*.env
+cookies*
+*.cookie
+
+# Local dataset paths
+configs/ec3d_subjects.yaml
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary scripts
+_tmp_*.py
+
+# Upstream model downloads (fetch-on-demand)
+models/ctrgcn/
+models/infogcn/
+models/freqmixformer/
+
+# Split tensors (use make_split_indices.py instead)
+splits/*.npy
+
+# Pytest
+.pytest_cache/
+htmlcov/
+.coverage

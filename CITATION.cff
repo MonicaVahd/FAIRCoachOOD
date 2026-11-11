@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this code or the benchmark splits, please cite the paper below."
+type: software
+title: "Code, preprocessing tools and benchmark splits for Skeleton-Based Exercise Quality Assessment Under Domain Shift"
+license: Apache-2.0
+url: "https://skeletoneqa.github.io/"
+authors:
+  - family-names: "Vahdati"
+    given-names: "Monica"
+    affiliation: "MCRLab, School of Electrical Engineering and Computer Science, University of Ottawa"
+  - family-names: "Gholizadeh HamlAbadi"
+    given-names: "Kamran"
+    affiliation: "MCRLab, School of Electrical Engineering and Computer Science, University of Ottawa"
+  - family-names: "Etemad"
+    given-names: "Ali"
+    affiliation: "Department of Electrical and Computer Engineering, Queen's University"
+  - family-names: "El Saddik"
+    given-names: "Abdulmotaleb"
+    affiliation: "MCRLab, School of Electrical Engineering and Computer Science, University of Ottawa"
+preferred-citation:
+  type: conference-paper
+  title: "Skeleton-Based Exercise Quality Assessment Under Domain Shift: A Benchmark Study of Cross-Domain Failure Modes"
+  authors:
+    - family-names: "Vahdati"
+      given-names: "Monica"
+    - family-names: "Gholizadeh HamlAbadi"
+      given-names: "Kamran"
+    - family-names: "Etemad"
+      given-names: "Ali"
+    - family-names: "El Saddik"
+      given-names: "Abdulmotaleb"
+  collection-title: "The 3rd International Workshop on Multimedia Computing for Health and Medicine (MCHM '26)"
+  conference:
+    name: "MCHM '26"
+    location: "Rio de Janeiro, Brazil"
+    date-start: "2026-11-10"
+    date-end: "2026-11-14"
+  publisher:
+    name: "ACM"
+    address: "New York, NY, USA"
+  year: 2026
+  doi: "10.1145/3840471.3842592"
+  isbn: "979-8-4007-2925-6"

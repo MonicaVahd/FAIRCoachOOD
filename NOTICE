@@ -1,0 +1,90 @@
+Skeleton-based squat quality under domain shift: code, preprocessing and split generation
+Copyright 2026 the authors (see CITATION.cff)
+
+Licensed under the Apache License, Version 2.0 (see LICENSE), except for the third-party code listed below,
+which keeps its own licence. The full licence text of each project is in THIRD_PARTY_LICENSES/.
+Each third-party source file also carries a header with the upstream copyright line, the licence and a modification notice.
+
+Similarity values compare non-comment, non-blank lines of the file in this repository with the upstream file at the commit
+named below, on 2026-11-10. The commit each file was originally taken from was not recorded. A record of individual changes
+was not kept; where a change is described it comes from the paper (Table 2 / Section 3.3).
+
+==============================================================================
+1. ST-GCN
+   Upstream: https://github.com/yysijie/st-gcn  (compared with commit 221c0e152054b8da593774c0d483e59befdb9061, 2019-08-31)
+   Copyright (c) 2018, Multimedia Laboratary, The Chinese University of Hong Kong (spelling as in the upstream LICENSE)
+   Licence: BSD-2-Clause  (THIRD_PARTY_LICENSES/st-gcn_LICENSE.txt)
+   Files:
+     - models/st_gcn/st_gcn.py  <- net/st_gcn.py: modified (similarity 0.967)
+       Used as an OpenPose-18, two-class model (see models/builders.py).
+     - models/st_gcn/utils/graph.py  <- net/utils/graph.py: modified (similarity 0.986)
+     - models/st_gcn/utils/tgcn.py  <- net/utils/tgcn.py: identical in all code lines
+
+==============================================================================
+2. HD-GCN
+   Upstream: https://github.com/Jho-Yonsei/HD-GCN  (compared with commit 672da2c3d84c9ea41dab124b7be8b3f82a83b6b2, 2023-10-05)
+   Copyright (c) 2023 Jungho Lee
+   Licence: MIT  (THIRD_PARTY_LICENSES/hd-gcn_LICENSE.txt)
+   Files:
+     - models/hdgcn/hdgcn.py  <- model/HDGCN.py: modified (similarity 0.979)
+       The paper (Table 2) lists a custom OpenPose graph with centre-of-mass joint 8 (RHip).
+     - models/hdgcn/hdgcn_graph.py  <- graph/ntu_rgb_d_hierarchy.py: modified (similarity 0.596)
+       No upstream file matches closely; this file adapts HD-GCN's hierarchical graph definition to the OpenPose-18 layout.
+     - models/hdgcn/hdgcn_graph_openpose.py  <- graph/ntu_rgb_d_hierarchy.py: modified (similarity 0.408)
+       No upstream file matches closely; this file adapts HD-GCN's hierarchical graph definition to the OpenPose-18 layout (centre joint 8).
+     - models/hdgcn/hdgcn_graph_tools.py  <- graph/tools.py: modified (similarity 0.935)
+
+==============================================================================
+3. ProtoGCN
+   Upstream: https://github.com/firework8/ProtoGCN  (compared with commit ddf7f274f9f5d9e45a2fcfeb299bfb3fd7c2303d, 2025-08-29)
+   Copyright (c) 2024 Hongda Liu
+   Licence: MIT  (THIRD_PARTY_LICENSES/protogcn_LICENSE.txt)
+   Files:
+     - models/protogcn/protogcn.py  <- protogcn/models/gcns/protogcn.py: modified (similarity 0.805)
+       Restructured port (module layout differs from upstream).
+     - models/protogcn/protogcn_gcn.py  <- protogcn/models/gcns/utils/gcn.py: modified (similarity 0.840)
+     - models/protogcn/protogcn_graph.py  <- protogcn/utils/graph.py: identical in all code lines
+     - models/protogcn/protogcn_init.py  <- protogcn/models/gcns/utils/init_func.py: identical in all code lines
+     - models/protogcn/protogcn_tcn.py  <- protogcn/models/gcns/utils/tcn.py: modified (similarity 0.963)
+
+==============================================================================
+4. SkateFormer
+   Upstream: https://github.com/KAIST-VICLab/SkateFormer  (compared with commit 0249e19d96b33e9150760129bbede56464126ae7, 2026-09-29)
+   Copyright (c) 2024 KAIST-VICLab
+   Licence: MIT  (THIRD_PARTY_LICENSES/skateformer_LICENSE.txt)
+   Files:
+     - models/skateformer/skateformer.py  <- model/SkateFormer.py: identical in all code lines
+
+==============================================================================
+5. BlockGCN
+   Upstream: https://github.com/ZhouYuxuanYX/BlockGCN  (compared with commit 7b45971a931c5b0ba60f3a7ba11a91e544de54fb, 2024-07-25)
+   The upstream LICENSE file is the unfilled Apache-2.0 text and names no copyright holder; the BlockGCN authors are Yuxuan Zhou, Xudong Yan, Zhi-Qi Cheng, Yan Yan, Qi Dai and Xian-Sheng Hua
+   Licence: Apache-2.0  (THIRD_PARTY_LICENSES/blockgcn_LICENSE.txt)
+   The upstream repository contains no NOTICE file (checked 2026-11-10). Files below are marked as modified in their headers (Apache-2.0 section 4(b)).
+   Files:
+     - models/blockgcn/blockgcn.py  <- model/BlockGCN.py: modified (similarity 0.918)
+       The topology encoder was replaced by a distance-matrix MLP (paper Section 3.3 and Table 2).
+
+==============================================================================
+6. HyperFormer
+   Upstream: https://github.com/ZhouYuxuanYX/Hyperformer  (compared with commit c35d996bcf51df6172d33b7a32fd278ee1cfd20f, 2023-10-07)
+   Copyright 2022 Yuxuan Zhou
+   Licence: Apache-2.0  (THIRD_PARTY_LICENSES/hyperformer_LICENSE.txt)
+   The upstream repository contains no NOTICE file (checked 2026-11-10). Files below are marked as modified in their headers (Apache-2.0 section 4(b)).
+   Files:
+     - models/hyperformer/hyperformer.py  <- model/Hyperformer.py: modified (similarity 0.992)
+       Adapted for the 18-joint OpenPose layout and a two-class output.
+     - models/hyperformer/hyperformer_graph.py  <- graph/ucla.py: modified (similarity 0.222)
+       No upstream file matches closely; this file defines the 5-group OpenPose-18 body-part labelling used for hyperedges (paper Table 2).
+
+==============================================================================
+Not included in this repository
+   CTR-GCN        https://github.com/Uason-Chen/CTR-GCN         CC BY-NC 4.0 (non-commercial)
+   InfoGCN        https://github.com/stnoah1/infogcn            no licence file
+   FreqMixFormer  https://github.com/wenhanwu95/FreqMixFormer   no licence file
+   scripts/fetch_upstream.py downloads the upstream files at a pinned commit. Read each licence (or its absence) before use;
+   downloading does not grant a licence.
+
+==============================================================================
+AI assistance
+   This code was developed with AI assistance; the author reviewed the output.

@@ -1,0 +1,2936 @@
+Device: cuda
+Output dir: output
+
+
+######################################################################
+# ST-GCN
+######################################################################
+
+======================================================================
+B1 EC3D->REHAB24 OOD
+======================================================================
+  Checkpoint : output\ood_b1_ec3d_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for B1 EC3D->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     130                      0
+  Actual Incorrect                    61                      0
+  True Positives=130  True Negatives=0  False Positives=61  False Negatives=0
+  [B1 EC3D->REHAB24 OOD] Majority class prediction check: model predicted correct=191 times, incorrect=0 times
+
+======================================================================
+B2 EC3D->Custom OOD
+======================================================================
+  Checkpoint : output\ood_b2_ec3d_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for B2 EC3D->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    162
+  Actual Incorrect                     0                    120
+  True Positives=0  True Negatives=120  False Positives=0  False Negatives=162
+  [B2 EC3D->Custom OOD] Majority class prediction check: model predicted correct=0 times, incorrect=282 times
+
+======================================================================
+B3 REHAB24->EC3D OOD
+======================================================================
+  Checkpoint : output\ood_b3_rehab24_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for B3 REHAB24->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      41                      0
+  Actual Incorrect                   100                      0
+  True Positives=41  True Negatives=0  False Positives=100  False Negatives=0
+  [B3 REHAB24->EC3D OOD] Majority class prediction check: model predicted correct=141 times, incorrect=0 times
+
+======================================================================
+B4 REHAB24->Custom OOD
+======================================================================
+  Checkpoint : output\ood_b4_rehab24_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for B4 REHAB24->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       1                    161
+  Actual Incorrect                     1                    119
+  True Positives=1  True Negatives=119  False Positives=1  False Negatives=161
+  [B4 REHAB24->Custom OOD] Majority class prediction check: model predicted correct=2 times, incorrect=280 times
+
+======================================================================
+B5 Custom->EC3D OOD
+======================================================================
+  Checkpoint : output\ood_b5_custom_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for B5 Custom->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [B5 Custom->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+B6 Custom->REHAB24 OOD
+======================================================================
+  Checkpoint : output\ood_b6_custom_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for B6 Custom->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     0                     61
+  True Positives=0  True Negatives=61  False Positives=0  False Negatives=130
+  [B6 Custom->REHAB24 OOD] Majority class prediction check: model predicted correct=0 times, incorrect=191 times
+
+======================================================================
+B7 UI-PRMD->EC3D OOD
+======================================================================
+  Checkpoint : output\ood_b7_uiprmd_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for B7 UI-PRMD->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [B7 UI-PRMD->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+B8 UI-PRMD->REHAB24 OOD
+======================================================================
+  Checkpoint : output\ood_b8_uiprmd_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for B8 UI-PRMD->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     0                     61
+  True Positives=0  True Negatives=61  False Positives=0  False Negatives=130
+  [B8 UI-PRMD->REHAB24 OOD] Majority class prediction check: model predicted correct=0 times, incorrect=191 times
+
+======================================================================
+B9 UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\ood_b9_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for B9 UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    162
+  Actual Incorrect                     0                    120
+  True Positives=0  True Negatives=120  False Positives=0  False Negatives=162
+  [B9 UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=0 times, incorrect=282 times
+
+======================================================================
+B10 EC3D->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\ood_b10_ec3d_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for B10 EC3D->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    100
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=100
+  [B10 EC3D->UI-PRMD OOD] Majority class prediction check: model predicted correct=0 times, incorrect=200 times
+
+======================================================================
+B11 REHAB24->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\ood_b11_rehab24_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for B11 REHAB24->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     100                      0
+  Actual Incorrect                   100                      0
+  True Positives=100  True Negatives=0  False Positives=100  False Negatives=0
+  [B11 REHAB24->UI-PRMD OOD] Majority class prediction check: model predicted correct=200 times, incorrect=0 times
+
+======================================================================
+B12 Custom->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\ood_b12_custom_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for B12 Custom->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    100
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=100
+  [B12 Custom->UI-PRMD OOD] Majority class prediction check: model predicted correct=0 times, incorrect=200 times
+
+======================================================================
+C1 EC3D+REHAB24->Custom OOD
+======================================================================
+  Checkpoint : output\ood_c1_ec3d_rehab24_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C1 EC3D+REHAB24->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       6                    156
+  Actual Incorrect                    18                    102
+  True Positives=6  True Negatives=102  False Positives=18  False Negatives=156
+  [C1 EC3D+REHAB24->Custom OOD] Majority class prediction check: model predicted correct=24 times, incorrect=258 times
+
+======================================================================
+C2 EC3D+Custom->REHAB24 OOD
+======================================================================
+  Checkpoint : output\ood_c2_ec3d_custom_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for C2 EC3D+Custom->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     1                     60
+  True Positives=0  True Negatives=60  False Positives=1  False Negatives=130
+  [C2 EC3D+Custom->REHAB24 OOD] Majority class prediction check: model predicted correct=1 times, incorrect=190 times
+
+======================================================================
+C3 REHAB24+Custom->EC3D OOD
+======================================================================
+  Checkpoint : output\ood_c3_rehab24_custom_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for C3 REHAB24+Custom->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [C3 REHAB24+Custom->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+C4 EC3D+UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\ood_c4_ec3d_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C4 EC3D+UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      42                    120
+  Actual Incorrect                    26                     94
+  True Positives=42  True Negatives=94  False Positives=26  False Negatives=120
+  [C4 EC3D+UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=68 times, incorrect=214 times
+
+======================================================================
+C5 REHAB24+UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\ood_c5_rehab24_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C5 REHAB24+UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     124                     38
+  Actual Incorrect                   110                     10
+  True Positives=124  True Negatives=10  False Positives=110  False Negatives=38
+  [C5 REHAB24+UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=234 times, incorrect=48 times
+
+======================================================================
+C6 EC3D+REHAB24+Custom->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\ood_c6_ec3d_rehab24_custom_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for C6 EC3D+REHAB24+Custom->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     100                      0
+  Actual Incorrect                   100                      0
+  True Positives=100  True Negatives=0  False Positives=100  False Negatives=0
+  [C6 EC3D+REHAB24+Custom->UI-PRMD OOD] Majority class prediction check: model predicted correct=200 times, incorrect=0 times
+
+======================================================================
+C8 EC3D+REHAB24+UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\ood_c8_ec3d_rehab24_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C8 EC3D+REHAB24+UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      88                     74
+  Actual Incorrect                    48                     72
+  True Positives=88  True Negatives=72  False Positives=48  False Negatives=74
+  [C8 EC3D+REHAB24+UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=136 times, incorrect=146 times
+
+======================================================================
+C9 EC3D+Custom+UI-PRMD->REHAB24 OOD
+======================================================================
+  Checkpoint : output\ood_c9_ec3d_custom_uiprmd_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for C9 EC3D+Custom+UI-PRMD->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     0                     61
+  True Positives=0  True Negatives=61  False Positives=0  False Negatives=130
+  [C9 EC3D+Custom+UI-PRMD->REHAB24 OOD] Majority class prediction check: model predicted correct=0 times, incorrect=191 times
+
+======================================================================
+C10 REHAB24+Custom+UI-PRMD->EC3D OOD
+======================================================================
+  Checkpoint : output\ood_c10_rehab24_custom_uiprmd_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for C10 REHAB24+Custom+UI-PRMD->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [C10 REHAB24+Custom+UI-PRMD->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+C7 Custom+UI-PRMD->EC3D OOD
+======================================================================
+  Checkpoint : output\ood_c7_custom_uiprmd_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for C7 Custom+UI-PRMD->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [C7 Custom+UI-PRMD->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+
+######################################################################
+# CTR-GCN
+######################################################################
+
+======================================================================
+B1b EC3D->REHAB24 OOD
+======================================================================
+  Checkpoint : output\ctrgcn_ood_b1_ec3d_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for B1b EC3D->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     0                     61
+  True Positives=0  True Negatives=61  False Positives=0  False Negatives=130
+  [B1b EC3D->REHAB24 OOD] Majority class prediction check: model predicted correct=0 times, incorrect=191 times
+
+======================================================================
+B2b EC3D->Custom OOD
+======================================================================
+  Checkpoint : output\ctrgcn_ood_b2_ec3d_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for B2b EC3D->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    162
+  Actual Incorrect                     0                    120
+  True Positives=0  True Negatives=120  False Positives=0  False Negatives=162
+  [B2b EC3D->Custom OOD] Majority class prediction check: model predicted correct=0 times, incorrect=282 times
+
+======================================================================
+B3b REHAB24->EC3D OOD
+======================================================================
+  Checkpoint : output\ctrgcn_ood_b3_rehab24_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for B3b REHAB24->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [B3b REHAB24->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+B4b REHAB24->Custom OOD
+======================================================================
+  Checkpoint : output\ctrgcn_ood_b4_rehab24_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for B4b REHAB24->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    162
+  Actual Incorrect                     0                    120
+  True Positives=0  True Negatives=120  False Positives=0  False Negatives=162
+  [B4b REHAB24->Custom OOD] Majority class prediction check: model predicted correct=0 times, incorrect=282 times
+
+======================================================================
+B5b Custom->EC3D OOD
+======================================================================
+  Checkpoint : output\ctrgcn_ood_b5_custom_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for B5b Custom->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [B5b Custom->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+B6b Custom->REHAB24 OOD
+======================================================================
+  Checkpoint : output\ctrgcn_ood_b6_custom_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for B6b Custom->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      37                     93
+  Actual Incorrect                    20                     41
+  True Positives=37  True Negatives=41  False Positives=20  False Negatives=93
+  [B6b Custom->REHAB24 OOD] Majority class prediction check: model predicted correct=57 times, incorrect=134 times
+
+======================================================================
+B7b UI-PRMD->EC3D OOD
+======================================================================
+  Checkpoint : output\ctrgcn_ood_b7_uiprmd_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for B7b UI-PRMD->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [B7b UI-PRMD->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+B8b UI-PRMD->REHAB24 OOD
+======================================================================
+  Checkpoint : output\ctrgcn_ood_b8_uiprmd_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for B8b UI-PRMD->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     0                     61
+  True Positives=0  True Negatives=61  False Positives=0  False Negatives=130
+  [B8b UI-PRMD->REHAB24 OOD] Majority class prediction check: model predicted correct=0 times, incorrect=191 times
+
+======================================================================
+B9b UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\ctrgcn_ood_b9_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for B9b UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    162
+  Actual Incorrect                     0                    120
+  True Positives=0  True Negatives=120  False Positives=0  False Negatives=162
+  [B9b UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=0 times, incorrect=282 times
+
+======================================================================
+B10b EC3D->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\ctrgcn_ood_b10_ec3d_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for B10b EC3D->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    100
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=100
+  [B10b EC3D->UI-PRMD OOD] Majority class prediction check: model predicted correct=0 times, incorrect=200 times
+
+======================================================================
+B11b REHAB24->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\ctrgcn_ood_b11_rehab24_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for B11b REHAB24->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     100                      0
+  Actual Incorrect                   100                      0
+  True Positives=100  True Negatives=0  False Positives=100  False Negatives=0
+  [B11b REHAB24->UI-PRMD OOD] Majority class prediction check: model predicted correct=200 times, incorrect=0 times
+
+======================================================================
+B12b Custom->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\ctrgcn_ood_b12_custom_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for B12b Custom->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    100
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=100
+  [B12b Custom->UI-PRMD OOD] Majority class prediction check: model predicted correct=0 times, incorrect=200 times
+
+======================================================================
+C1b EC3D+REHAB24->Custom OOD
+======================================================================
+  Checkpoint : output\ctrgcn_ood_c1_ec3d_rehab24_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C1b EC3D+REHAB24->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     135                     27
+  Actual Incorrect                    98                     22
+  True Positives=135  True Negatives=22  False Positives=98  False Negatives=27
+  [C1b EC3D+REHAB24->Custom OOD] Majority class prediction check: model predicted correct=233 times, incorrect=49 times
+
+======================================================================
+C2b EC3D+Custom->REHAB24 OOD
+======================================================================
+  Checkpoint : output\ctrgcn_ood_c2_ec3d_custom_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for C2b EC3D+Custom->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     0                     61
+  True Positives=0  True Negatives=61  False Positives=0  False Negatives=130
+  [C2b EC3D+Custom->REHAB24 OOD] Majority class prediction check: model predicted correct=0 times, incorrect=191 times
+
+======================================================================
+C3b REHAB24+Custom->EC3D OOD
+======================================================================
+  Checkpoint : output\ctrgcn_ood_c3_rehab24_custom_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for C3b REHAB24+Custom->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [C3b REHAB24+Custom->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+C4b EC3D+UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\ctrgcn_ood_c4_ec3d_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C4b EC3D+UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      98                     64
+  Actual Incorrect                    62                     58
+  True Positives=98  True Negatives=58  False Positives=62  False Negatives=64
+  [C4b EC3D+UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=160 times, incorrect=122 times
+
+======================================================================
+C5b REHAB24+UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\ctrgcn_ood_c5_rehab24_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C5b REHAB24+UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    162
+  Actual Incorrect                     0                    120
+  True Positives=0  True Negatives=120  False Positives=0  False Negatives=162
+  [C5b REHAB24+UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=0 times, incorrect=282 times
+
+======================================================================
+C6b EC3D+REHAB24+Custom->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\ctrgcn_ood_c6_ec3d_rehab24_custom_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for C6b EC3D+REHAB24+Custom->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     100                      0
+  Actual Incorrect                   100                      0
+  True Positives=100  True Negatives=0  False Positives=100  False Negatives=0
+  [C6b EC3D+REHAB24+Custom->UI-PRMD OOD] Majority class prediction check: model predicted correct=200 times, incorrect=0 times
+
+======================================================================
+C8b EC3D+REHAB24+UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\ctrgcn_ood_c8_ec3d_rehab24_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C8b EC3D+REHAB24+UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    162
+  Actual Incorrect                     0                    120
+  True Positives=0  True Negatives=120  False Positives=0  False Negatives=162
+  [C8b EC3D+REHAB24+UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=0 times, incorrect=282 times
+
+======================================================================
+C9b EC3D+Custom+UI-PRMD->REHAB24 OOD
+======================================================================
+  Checkpoint : output\ctrgcn_ood_c9_ec3d_custom_uiprmd_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for C9b EC3D+Custom+UI-PRMD->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     0                     61
+  True Positives=0  True Negatives=61  False Positives=0  False Negatives=130
+  [C9b EC3D+Custom+UI-PRMD->REHAB24 OOD] Majority class prediction check: model predicted correct=0 times, incorrect=191 times
+
+======================================================================
+C10b REHAB24+Custom+UI-PRMD->EC3D OOD
+======================================================================
+  Checkpoint : output\ctrgcn_ood_c10_rehab24_custom_uiprmd_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for C10b REHAB24+Custom+UI-PRMD->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [C10b REHAB24+Custom+UI-PRMD->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+C7b Custom+UI-PRMD->EC3D OOD
+======================================================================
+  Checkpoint : output\ctrgcn_ood_c7_custom_uiprmd_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for C7b Custom+UI-PRMD->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [C7b Custom+UI-PRMD->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+
+######################################################################
+# InfoGCN
+######################################################################
+
+======================================================================
+B1c EC3D->REHAB24 OOD
+======================================================================
+  Checkpoint : output\infogcn_ood_b1_ec3d_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for B1c EC3D->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     0                     61
+  True Positives=0  True Negatives=61  False Positives=0  False Negatives=130
+  [B1c EC3D->REHAB24 OOD] Majority class prediction check: model predicted correct=0 times, incorrect=191 times
+
+======================================================================
+B2c EC3D->Custom OOD
+======================================================================
+  Checkpoint : output\infogcn_ood_b2_ec3d_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for B2c EC3D->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     162                      0
+  Actual Incorrect                   120                      0
+  True Positives=162  True Negatives=0  False Positives=120  False Negatives=0
+  [B2c EC3D->Custom OOD] Majority class prediction check: model predicted correct=282 times, incorrect=0 times
+
+======================================================================
+B3c REHAB24->EC3D OOD
+======================================================================
+  Checkpoint : output\infogcn_ood_b3_rehab24_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for B3c REHAB24->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [B3c REHAB24->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+B4c REHAB24->Custom OOD
+======================================================================
+  Checkpoint : output\infogcn_ood_b4_rehab24_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for B4c REHAB24->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    162
+  Actual Incorrect                     0                    120
+  True Positives=0  True Negatives=120  False Positives=0  False Negatives=162
+  [B4c REHAB24->Custom OOD] Majority class prediction check: model predicted correct=0 times, incorrect=282 times
+
+======================================================================
+B5c Custom->EC3D OOD
+======================================================================
+  Checkpoint : output\infogcn_ood_b5_custom_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for B5c Custom->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [B5c Custom->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+B6c Custom->REHAB24 OOD
+======================================================================
+  Checkpoint : output\infogcn_ood_b6_custom_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for B6c Custom->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     130                      0
+  Actual Incorrect                    59                      2
+  True Positives=130  True Negatives=2  False Positives=59  False Negatives=0
+  [B6c Custom->REHAB24 OOD] Majority class prediction check: model predicted correct=189 times, incorrect=2 times
+
+======================================================================
+B7c UI-PRMD->EC3D OOD
+======================================================================
+  Checkpoint : output\infogcn_ood_b7_uiprmd_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for B7c UI-PRMD->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [B7c UI-PRMD->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+B8c UI-PRMD->REHAB24 OOD
+======================================================================
+  Checkpoint : output\infogcn_ood_b8_uiprmd_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for B8c UI-PRMD->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     0                     61
+  True Positives=0  True Negatives=61  False Positives=0  False Negatives=130
+  [B8c UI-PRMD->REHAB24 OOD] Majority class prediction check: model predicted correct=0 times, incorrect=191 times
+
+======================================================================
+B9c UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\infogcn_ood_b9_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for B9c UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    162
+  Actual Incorrect                     0                    120
+  True Positives=0  True Negatives=120  False Positives=0  False Negatives=162
+  [B9c UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=0 times, incorrect=282 times
+
+======================================================================
+B10c EC3D->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\infogcn_ood_b10_ec3d_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for B10c EC3D->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    100
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=100
+  [B10c EC3D->UI-PRMD OOD] Majority class prediction check: model predicted correct=0 times, incorrect=200 times
+
+======================================================================
+B11c REHAB24->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\infogcn_ood_b11_rehab24_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for B11c REHAB24->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    100
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=100
+  [B11c REHAB24->UI-PRMD OOD] Majority class prediction check: model predicted correct=0 times, incorrect=200 times
+
+======================================================================
+B12c Custom->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\infogcn_ood_b12_custom_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for B12c Custom->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     100                      0
+  Actual Incorrect                   100                      0
+  True Positives=100  True Negatives=0  False Positives=100  False Negatives=0
+  [B12c Custom->UI-PRMD OOD] Majority class prediction check: model predicted correct=200 times, incorrect=0 times
+
+======================================================================
+C1c EC3D+REHAB24->Custom OOD
+======================================================================
+  Checkpoint : output\infogcn_ood_c1_ec3d_rehab24_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C1c EC3D+REHAB24->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    162
+  Actual Incorrect                     0                    120
+  True Positives=0  True Negatives=120  False Positives=0  False Negatives=162
+  [C1c EC3D+REHAB24->Custom OOD] Majority class prediction check: model predicted correct=0 times, incorrect=282 times
+
+======================================================================
+C2c EC3D+Custom->REHAB24 OOD
+======================================================================
+  Checkpoint : output\infogcn_ood_c2_ec3d_custom_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for C2c EC3D+Custom->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      30                    100
+  Actual Incorrect                    11                     50
+  True Positives=30  True Negatives=50  False Positives=11  False Negatives=100
+  [C2c EC3D+Custom->REHAB24 OOD] Majority class prediction check: model predicted correct=41 times, incorrect=150 times
+
+======================================================================
+C3c REHAB24+Custom->EC3D OOD
+======================================================================
+  Checkpoint : output\infogcn_ood_c3_rehab24_custom_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for C3c REHAB24+Custom->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       4                     37
+  Actual Incorrect                     6                     94
+  True Positives=4  True Negatives=94  False Positives=6  False Negatives=37
+  [C3c REHAB24+Custom->EC3D OOD] Majority class prediction check: model predicted correct=10 times, incorrect=131 times
+
+======================================================================
+C4c EC3D+UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\infogcn_ood_c4_ec3d_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C4c EC3D+UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      80                     82
+  Actual Incorrect                    52                     68
+  True Positives=80  True Negatives=68  False Positives=52  False Negatives=82
+  [C4c EC3D+UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=132 times, incorrect=150 times
+
+======================================================================
+C5c REHAB24+UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\infogcn_ood_c5_rehab24_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C5c REHAB24+UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      59                    103
+  Actual Incorrect                    45                     75
+  True Positives=59  True Negatives=75  False Positives=45  False Negatives=103
+  [C5c REHAB24+UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=104 times, incorrect=178 times
+
+======================================================================
+C6c EC3D+REHAB24+Custom->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\infogcn_ood_c6_ec3d_rehab24_custom_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for C6c EC3D+REHAB24+Custom->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     100                      0
+  Actual Incorrect                   100                      0
+  True Positives=100  True Negatives=0  False Positives=100  False Negatives=0
+  [C6c EC3D+REHAB24+Custom->UI-PRMD OOD] Majority class prediction check: model predicted correct=200 times, incorrect=0 times
+
+======================================================================
+C8c EC3D+REHAB24+UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\infogcn_ood_c8_ec3d_rehab24_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C8c EC3D+REHAB24+UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       1                    161
+  Actual Incorrect                     5                    115
+  True Positives=1  True Negatives=115  False Positives=5  False Negatives=161
+  [C8c EC3D+REHAB24+UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=6 times, incorrect=276 times
+
+======================================================================
+C9c EC3D+Custom+UI-PRMD->REHAB24 OOD
+======================================================================
+  Checkpoint : output\infogcn_ood_c9_ec3d_custom_uiprmd_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for C9c EC3D+Custom+UI-PRMD->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     127                      3
+  Actual Incorrect                    53                      8
+  True Positives=127  True Negatives=8  False Positives=53  False Negatives=3
+  [C9c EC3D+Custom+UI-PRMD->REHAB24 OOD] Majority class prediction check: model predicted correct=180 times, incorrect=11 times
+
+======================================================================
+C10c REHAB24+Custom+UI-PRMD->EC3D OOD
+======================================================================
+  Checkpoint : output\infogcn_ood_c10_rehab24_custom_uiprmd_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for C10c REHAB24+Custom+UI-PRMD->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      41                      0
+  Actual Incorrect                   100                      0
+  True Positives=41  True Negatives=0  False Positives=100  False Negatives=0
+  [C10c REHAB24+Custom+UI-PRMD->EC3D OOD] Majority class prediction check: model predicted correct=141 times, incorrect=0 times
+
+======================================================================
+C7c Custom+UI-PRMD->EC3D OOD
+======================================================================
+  Checkpoint : output\infogcn_ood_c7_custom_uiprmd_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for C7c Custom+UI-PRMD->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      41                      0
+  Actual Incorrect                   100                      0
+  True Positives=41  True Negatives=0  False Positives=100  False Negatives=0
+  [C7c Custom+UI-PRMD->EC3D OOD] Majority class prediction check: model predicted correct=141 times, incorrect=0 times
+
+
+######################################################################
+# BlockGCN
+######################################################################
+
+======================================================================
+B1d EC3D->REHAB24 OOD
+======================================================================
+  Checkpoint : output\blockgcn_ood_b1_ec3d_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for B1d EC3D->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     0                     61
+  True Positives=0  True Negatives=61  False Positives=0  False Negatives=130
+  [B1d EC3D->REHAB24 OOD] Majority class prediction check: model predicted correct=0 times, incorrect=191 times
+
+======================================================================
+B2d EC3D->Custom OOD
+======================================================================
+  Checkpoint : output\blockgcn_ood_b2_ec3d_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for B2d EC3D->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     158                      4
+  Actual Incorrect                   105                     15
+  True Positives=158  True Negatives=15  False Positives=105  False Negatives=4
+  [B2d EC3D->Custom OOD] Majority class prediction check: model predicted correct=263 times, incorrect=19 times
+
+======================================================================
+B3d REHAB24->EC3D OOD
+======================================================================
+  Checkpoint : output\blockgcn_ood_b3_rehab24_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for B3d REHAB24->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [B3d REHAB24->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+B4d REHAB24->Custom OOD
+======================================================================
+  Checkpoint : output\blockgcn_ood_b4_rehab24_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for B4d REHAB24->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    162
+  Actual Incorrect                     0                    120
+  True Positives=0  True Negatives=120  False Positives=0  False Negatives=162
+  [B4d REHAB24->Custom OOD] Majority class prediction check: model predicted correct=0 times, incorrect=282 times
+
+======================================================================
+B5d Custom->EC3D OOD
+======================================================================
+  Checkpoint : output\blockgcn_ood_b5_custom_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for B5d Custom->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      22                     19
+  Actual Incorrect                    42                     58
+  True Positives=22  True Negatives=58  False Positives=42  False Negatives=19
+  [B5d Custom->EC3D OOD] Majority class prediction check: model predicted correct=64 times, incorrect=77 times
+
+======================================================================
+B6d Custom->REHAB24 OOD
+======================================================================
+  Checkpoint : output\blockgcn_ood_b6_custom_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for B6d Custom->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     130                      0
+  Actual Incorrect                    60                      1
+  True Positives=130  True Negatives=1  False Positives=60  False Negatives=0
+  [B6d Custom->REHAB24 OOD] Majority class prediction check: model predicted correct=190 times, incorrect=1 times
+
+======================================================================
+B7d UI-PRMD->EC3D OOD
+======================================================================
+  Checkpoint : output\blockgcn_ood_b7_uiprmd_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for B7d UI-PRMD->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [B7d UI-PRMD->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+B8d UI-PRMD->REHAB24 OOD
+======================================================================
+  Checkpoint : output\blockgcn_ood_b8_uiprmd_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for B8d UI-PRMD->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      16                    114
+  Actual Incorrect                    10                     51
+  True Positives=16  True Negatives=51  False Positives=10  False Negatives=114
+  [B8d UI-PRMD->REHAB24 OOD] Majority class prediction check: model predicted correct=26 times, incorrect=165 times
+
+======================================================================
+B9d UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\blockgcn_ood_b9_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for B9d UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       4                    158
+  Actual Incorrect                     2                    118
+  True Positives=4  True Negatives=118  False Positives=2  False Negatives=158
+  [B9d UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=6 times, incorrect=276 times
+
+======================================================================
+B10d EC3D->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\blockgcn_ood_b10_ec3d_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for B10d EC3D->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    100
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=100
+  [B10d EC3D->UI-PRMD OOD] Majority class prediction check: model predicted correct=0 times, incorrect=200 times
+
+======================================================================
+B11d REHAB24->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\blockgcn_ood_b11_rehab24_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for B11d REHAB24->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    100
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=100
+  [B11d REHAB24->UI-PRMD OOD] Majority class prediction check: model predicted correct=0 times, incorrect=200 times
+
+======================================================================
+B12d Custom->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\blockgcn_ood_b12_custom_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for B12d Custom->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     100                      0
+  Actual Incorrect                   100                      0
+  True Positives=100  True Negatives=0  False Positives=100  False Negatives=0
+  [B12d Custom->UI-PRMD OOD] Majority class prediction check: model predicted correct=200 times, incorrect=0 times
+
+======================================================================
+C1d EC3D+REHAB24->Custom OOD
+======================================================================
+  Checkpoint : output\blockgcn_ood_c1_ec3d_rehab24_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C1d EC3D+REHAB24->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     162                      0
+  Actual Incorrect                   120                      0
+  True Positives=162  True Negatives=0  False Positives=120  False Negatives=0
+  [C1d EC3D+REHAB24->Custom OOD] Majority class prediction check: model predicted correct=282 times, incorrect=0 times
+
+======================================================================
+C2d EC3D+Custom->REHAB24 OOD
+======================================================================
+  Checkpoint : output\blockgcn_ood_c2_ec3d_custom_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for C2d EC3D+Custom->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      11                    119
+  Actual Incorrect                     0                     61
+  True Positives=11  True Negatives=61  False Positives=0  False Negatives=119
+  [C2d EC3D+Custom->REHAB24 OOD] Majority class prediction check: model predicted correct=11 times, incorrect=180 times
+
+======================================================================
+C3d REHAB24+Custom->EC3D OOD
+======================================================================
+  Checkpoint : output\blockgcn_ood_c3_rehab24_custom_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for C3d REHAB24+Custom->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      41                      0
+  Actual Incorrect                   100                      0
+  True Positives=41  True Negatives=0  False Positives=100  False Negatives=0
+  [C3d REHAB24+Custom->EC3D OOD] Majority class prediction check: model predicted correct=141 times, incorrect=0 times
+
+======================================================================
+C4d EC3D+UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\blockgcn_ood_c4_ec3d_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C4d EC3D+UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     162                      0
+  Actual Incorrect                   120                      0
+  True Positives=162  True Negatives=0  False Positives=120  False Negatives=0
+  [C4d EC3D+UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=282 times, incorrect=0 times
+
+======================================================================
+C5d REHAB24+UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\blockgcn_ood_c5_rehab24_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C5d REHAB24+UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     162                      0
+  Actual Incorrect                   120                      0
+  True Positives=162  True Negatives=0  False Positives=120  False Negatives=0
+  [C5d REHAB24+UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=282 times, incorrect=0 times
+
+======================================================================
+C6d EC3D+REHAB24+Custom->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\blockgcn_ood_c6_ec3d_rehab24_custom_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for C6d EC3D+REHAB24+Custom->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     100                      0
+  Actual Incorrect                   100                      0
+  True Positives=100  True Negatives=0  False Positives=100  False Negatives=0
+  [C6d EC3D+REHAB24+Custom->UI-PRMD OOD] Majority class prediction check: model predicted correct=200 times, incorrect=0 times
+
+======================================================================
+C8d EC3D+REHAB24+UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\blockgcn_ood_c8_ec3d_rehab24_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C8d EC3D+REHAB24+UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      98                     64
+  Actual Incorrect                    83                     37
+  True Positives=98  True Negatives=37  False Positives=83  False Negatives=64
+  [C8d EC3D+REHAB24+UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=181 times, incorrect=101 times
+
+======================================================================
+C9d EC3D+Custom+UI-PRMD->REHAB24 OOD
+======================================================================
+  Checkpoint : output\blockgcn_ood_c9_ec3d_custom_uiprmd_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for C9d EC3D+Custom+UI-PRMD->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      13                    117
+  Actual Incorrect                    10                     51
+  True Positives=13  True Negatives=51  False Positives=10  False Negatives=117
+  [C9d EC3D+Custom+UI-PRMD->REHAB24 OOD] Majority class prediction check: model predicted correct=23 times, incorrect=168 times
+
+======================================================================
+C10d REHAB24+Custom+UI-PRMD->EC3D OOD
+======================================================================
+  Checkpoint : output\blockgcn_ood_c10_rehab24_custom_uiprmd_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for C10d REHAB24+Custom+UI-PRMD->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [C10d REHAB24+Custom+UI-PRMD->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+C7d Custom+UI-PRMD->EC3D OOD
+======================================================================
+  Checkpoint : output\blockgcn_ood_c7_custom_uiprmd_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for C7d Custom+UI-PRMD->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      29                     12
+  Actual Incorrect                    89                     11
+  True Positives=29  True Negatives=11  False Positives=89  False Negatives=12
+  [C7d Custom+UI-PRMD->EC3D OOD] Majority class prediction check: model predicted correct=118 times, incorrect=23 times
+
+
+######################################################################
+# HD-GCN
+######################################################################
+
+======================================================================
+B1e EC3D->REHAB24 OOD
+======================================================================
+  Checkpoint : output\hdgcn_ood_b1_ec3d_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for B1e EC3D->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     130                      0
+  Actual Incorrect                    61                      0
+  True Positives=130  True Negatives=0  False Positives=61  False Negatives=0
+  [B1e EC3D->REHAB24 OOD] Majority class prediction check: model predicted correct=191 times, incorrect=0 times
+
+======================================================================
+B2e EC3D->Custom OOD
+======================================================================
+  Checkpoint : output\hdgcn_ood_b2_ec3d_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for B2e EC3D->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     106                     56
+  Actual Incorrect                    63                     57
+  True Positives=106  True Negatives=57  False Positives=63  False Negatives=56
+  [B2e EC3D->Custom OOD] Majority class prediction check: model predicted correct=169 times, incorrect=113 times
+
+======================================================================
+B3e REHAB24->EC3D OOD
+======================================================================
+  Checkpoint : output\hdgcn_ood_b3_rehab24_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for B3e REHAB24->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [B3e REHAB24->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+B4e REHAB24->Custom OOD
+======================================================================
+  Checkpoint : output\hdgcn_ood_b4_rehab24_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for B4e REHAB24->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     162                      0
+  Actual Incorrect                   120                      0
+  True Positives=162  True Negatives=0  False Positives=120  False Negatives=0
+  [B4e REHAB24->Custom OOD] Majority class prediction check: model predicted correct=282 times, incorrect=0 times
+
+======================================================================
+B5e Custom->EC3D OOD
+======================================================================
+  Checkpoint : output\hdgcn_ood_b5_custom_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for B5e Custom->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      32                      9
+  Actual Incorrect                    81                     19
+  True Positives=32  True Negatives=19  False Positives=81  False Negatives=9
+  [B5e Custom->EC3D OOD] Majority class prediction check: model predicted correct=113 times, incorrect=28 times
+
+======================================================================
+B6e Custom->REHAB24 OOD
+======================================================================
+  Checkpoint : output\hdgcn_ood_b6_custom_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for B6e Custom->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     130                      0
+  Actual Incorrect                    61                      0
+  True Positives=130  True Negatives=0  False Positives=61  False Negatives=0
+  [B6e Custom->REHAB24 OOD] Majority class prediction check: model predicted correct=191 times, incorrect=0 times
+
+======================================================================
+B7e UI-PRMD->EC3D OOD
+======================================================================
+  Checkpoint : output\hdgcn_ood_b7_uiprmd_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for B7e UI-PRMD->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      41                      0
+  Actual Incorrect                    99                      1
+  True Positives=41  True Negatives=1  False Positives=99  False Negatives=0
+  [B7e UI-PRMD->EC3D OOD] Majority class prediction check: model predicted correct=140 times, incorrect=1 times
+
+======================================================================
+B8e UI-PRMD->REHAB24 OOD
+======================================================================
+  Checkpoint : output\hdgcn_ood_b8_uiprmd_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for B8e UI-PRMD->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     0                     61
+  True Positives=0  True Negatives=61  False Positives=0  False Negatives=130
+  [B8e UI-PRMD->REHAB24 OOD] Majority class prediction check: model predicted correct=0 times, incorrect=191 times
+
+======================================================================
+B9e UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\hdgcn_ood_b9_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for B9e UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    162
+  Actual Incorrect                     0                    120
+  True Positives=0  True Negatives=120  False Positives=0  False Negatives=162
+  [B9e UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=0 times, incorrect=282 times
+
+======================================================================
+B10e EC3D->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\hdgcn_ood_b10_ec3d_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for B10e EC3D->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     100                      0
+  Actual Incorrect                   100                      0
+  True Positives=100  True Negatives=0  False Positives=100  False Negatives=0
+  [B10e EC3D->UI-PRMD OOD] Majority class prediction check: model predicted correct=200 times, incorrect=0 times
+
+======================================================================
+B11e REHAB24->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\hdgcn_ood_b11_rehab24_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for B11e REHAB24->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     100                      0
+  Actual Incorrect                    89                     11
+  True Positives=100  True Negatives=11  False Positives=89  False Negatives=0
+  [B11e REHAB24->UI-PRMD OOD] Majority class prediction check: model predicted correct=189 times, incorrect=11 times
+
+======================================================================
+B12e Custom->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\hdgcn_ood_b12_custom_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for B12e Custom->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     100                      0
+  Actual Incorrect                   100                      0
+  True Positives=100  True Negatives=0  False Positives=100  False Negatives=0
+  [B12e Custom->UI-PRMD OOD] Majority class prediction check: model predicted correct=200 times, incorrect=0 times
+
+======================================================================
+C1e EC3D+REHAB24->Custom OOD
+======================================================================
+  Checkpoint : output\hdgcn_ood_c1_ec3d_rehab24_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C1e EC3D+REHAB24->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      63                     99
+  Actual Incorrect                    42                     78
+  True Positives=63  True Negatives=78  False Positives=42  False Negatives=99
+  [C1e EC3D+REHAB24->Custom OOD] Majority class prediction check: model predicted correct=105 times, incorrect=177 times
+
+======================================================================
+C2e EC3D+Custom->REHAB24 OOD
+======================================================================
+  Checkpoint : output\hdgcn_ood_c2_ec3d_custom_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for C2e EC3D+Custom->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     0                     61
+  True Positives=0  True Negatives=61  False Positives=0  False Negatives=130
+  [C2e EC3D+Custom->REHAB24 OOD] Majority class prediction check: model predicted correct=0 times, incorrect=191 times
+
+======================================================================
+C3e REHAB24+Custom->EC3D OOD
+======================================================================
+  Checkpoint : output\hdgcn_ood_c3_rehab24_custom_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for C3e REHAB24+Custom->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [C3e REHAB24+Custom->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+C4e EC3D+UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\hdgcn_ood_c4_ec3d_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C4e EC3D+UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     121                     41
+  Actual Incorrect                    81                     39
+  True Positives=121  True Negatives=39  False Positives=81  False Negatives=41
+  [C4e EC3D+UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=202 times, incorrect=80 times
+
+======================================================================
+C5e REHAB24+UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\hdgcn_ood_c5_rehab24_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C5e REHAB24+UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    162
+  Actual Incorrect                     0                    120
+  True Positives=0  True Negatives=120  False Positives=0  False Negatives=162
+  [C5e REHAB24+UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=0 times, incorrect=282 times
+
+======================================================================
+C6e EC3D+REHAB24+Custom->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\hdgcn_ood_c6_ec3d_rehab24_custom_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for C6e EC3D+REHAB24+Custom->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     100                      0
+  Actual Incorrect                   100                      0
+  True Positives=100  True Negatives=0  False Positives=100  False Negatives=0
+  [C6e EC3D+REHAB24+Custom->UI-PRMD OOD] Majority class prediction check: model predicted correct=200 times, incorrect=0 times
+
+======================================================================
+C8e EC3D+REHAB24+UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\hdgcn_ood_c8_ec3d_rehab24_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C8e EC3D+REHAB24+UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    162
+  Actual Incorrect                     6                    114
+  True Positives=0  True Negatives=114  False Positives=6  False Negatives=162
+  [C8e EC3D+REHAB24+UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=6 times, incorrect=276 times
+
+======================================================================
+C9e EC3D+Custom+UI-PRMD->REHAB24 OOD
+======================================================================
+  Checkpoint : output\hdgcn_ood_c9_ec3d_custom_uiprmd_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for C9e EC3D+Custom+UI-PRMD->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     0                     61
+  True Positives=0  True Negatives=61  False Positives=0  False Negatives=130
+  [C9e EC3D+Custom+UI-PRMD->REHAB24 OOD] Majority class prediction check: model predicted correct=0 times, incorrect=191 times
+
+======================================================================
+C10e REHAB24+Custom+UI-PRMD->EC3D OOD
+======================================================================
+  Checkpoint : output\hdgcn_ood_c10_rehab24_custom_uiprmd_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for C10e REHAB24+Custom+UI-PRMD->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [C10e REHAB24+Custom+UI-PRMD->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+C7e Custom+UI-PRMD->EC3D OOD
+======================================================================
+  Checkpoint : output\hdgcn_ood_c7_custom_uiprmd_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for C7e Custom+UI-PRMD->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [C7e Custom+UI-PRMD->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+
+######################################################################
+# ProtoGCN
+######################################################################
+
+======================================================================
+B1f EC3D->REHAB24 OOD
+======================================================================
+  Checkpoint : output\protogcn_ood_b1_ec3d_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for B1f EC3D->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      16                    114
+  Actual Incorrect                     0                     61
+  True Positives=16  True Negatives=61  False Positives=0  False Negatives=114
+  [B1f EC3D->REHAB24 OOD] Majority class prediction check: model predicted correct=16 times, incorrect=175 times
+
+======================================================================
+B2f EC3D->Custom OOD
+======================================================================
+  Checkpoint : output\protogcn_ood_b2_ec3d_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for B2f EC3D->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     108                     54
+  Actual Incorrect                    63                     57
+  True Positives=108  True Negatives=57  False Positives=63  False Negatives=54
+  [B2f EC3D->Custom OOD] Majority class prediction check: model predicted correct=171 times, incorrect=111 times
+
+======================================================================
+B3f REHAB24->EC3D OOD
+======================================================================
+  Checkpoint : output\protogcn_ood_b3_rehab24_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for B3f REHAB24->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [B3f REHAB24->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+B4f REHAB24->Custom OOD
+======================================================================
+  Checkpoint : output\protogcn_ood_b4_rehab24_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for B4f REHAB24->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    162
+  Actual Incorrect                     0                    120
+  True Positives=0  True Negatives=120  False Positives=0  False Negatives=162
+  [B4f REHAB24->Custom OOD] Majority class prediction check: model predicted correct=0 times, incorrect=282 times
+
+======================================================================
+B5f Custom->EC3D OOD
+======================================================================
+  Checkpoint : output\protogcn_ood_b5_custom_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for B5f Custom->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      41                      0
+  Actual Incorrect                   100                      0
+  True Positives=41  True Negatives=0  False Positives=100  False Negatives=0
+  [B5f Custom->EC3D OOD] Majority class prediction check: model predicted correct=141 times, incorrect=0 times
+
+======================================================================
+B6f Custom->REHAB24 OOD
+======================================================================
+  Checkpoint : output\protogcn_ood_b6_custom_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for B6f Custom->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     0                     61
+  True Positives=0  True Negatives=61  False Positives=0  False Negatives=130
+  [B6f Custom->REHAB24 OOD] Majority class prediction check: model predicted correct=0 times, incorrect=191 times
+
+======================================================================
+B7f UI-PRMD->EC3D OOD
+======================================================================
+  Checkpoint : output\protogcn_ood_b7_uiprmd_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for B7f UI-PRMD->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [B7f UI-PRMD->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+B8f UI-PRMD->REHAB24 OOD
+======================================================================
+  Checkpoint : output\protogcn_ood_b8_uiprmd_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for B8f UI-PRMD->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     0                     61
+  True Positives=0  True Negatives=61  False Positives=0  False Negatives=130
+  [B8f UI-PRMD->REHAB24 OOD] Majority class prediction check: model predicted correct=0 times, incorrect=191 times
+
+======================================================================
+B9f UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\protogcn_ood_b9_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for B9f UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    162
+  Actual Incorrect                     0                    120
+  True Positives=0  True Negatives=120  False Positives=0  False Negatives=162
+  [B9f UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=0 times, incorrect=282 times
+
+======================================================================
+B10f EC3D->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\protogcn_ood_b10_ec3d_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for B10f EC3D->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    100
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=100
+  [B10f EC3D->UI-PRMD OOD] Majority class prediction check: model predicted correct=0 times, incorrect=200 times
+
+======================================================================
+B11f REHAB24->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\protogcn_ood_b11_rehab24_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for B11f REHAB24->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     100                      0
+  Actual Incorrect                   100                      0
+  True Positives=100  True Negatives=0  False Positives=100  False Negatives=0
+  [B11f REHAB24->UI-PRMD OOD] Majority class prediction check: model predicted correct=200 times, incorrect=0 times
+
+======================================================================
+B12f Custom->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\protogcn_ood_b12_custom_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for B12f Custom->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     100                      0
+  Actual Incorrect                   100                      0
+  True Positives=100  True Negatives=0  False Positives=100  False Negatives=0
+  [B12f Custom->UI-PRMD OOD] Majority class prediction check: model predicted correct=200 times, incorrect=0 times
+
+======================================================================
+C1f EC3D+REHAB24->Custom OOD
+======================================================================
+  Checkpoint : output\protogcn_ood_c1_ec3d_rehab24_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C1f EC3D+REHAB24->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      31                    131
+  Actual Incorrect                    16                    104
+  True Positives=31  True Negatives=104  False Positives=16  False Negatives=131
+  [C1f EC3D+REHAB24->Custom OOD] Majority class prediction check: model predicted correct=47 times, incorrect=235 times
+
+======================================================================
+C2f EC3D+Custom->REHAB24 OOD
+======================================================================
+  Checkpoint : output\protogcn_ood_c2_ec3d_custom_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for C2f EC3D+Custom->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     0                     61
+  True Positives=0  True Negatives=61  False Positives=0  False Negatives=130
+  [C2f EC3D+Custom->REHAB24 OOD] Majority class prediction check: model predicted correct=0 times, incorrect=191 times
+
+======================================================================
+C3f REHAB24+Custom->EC3D OOD
+======================================================================
+  Checkpoint : output\protogcn_ood_c3_rehab24_custom_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for C3f REHAB24+Custom->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [C3f REHAB24+Custom->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+C4f EC3D+UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\protogcn_ood_c4_ec3d_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C4f EC3D+UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    162
+  Actual Incorrect                     0                    120
+  True Positives=0  True Negatives=120  False Positives=0  False Negatives=162
+  [C4f EC3D+UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=0 times, incorrect=282 times
+
+======================================================================
+C5f REHAB24+UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\protogcn_ood_c5_rehab24_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C5f REHAB24+UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    162
+  Actual Incorrect                     0                    120
+  True Positives=0  True Negatives=120  False Positives=0  False Negatives=162
+  [C5f REHAB24+UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=0 times, incorrect=282 times
+
+======================================================================
+C6f EC3D+REHAB24+Custom->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\protogcn_ood_c6_ec3d_rehab24_custom_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for C6f EC3D+REHAB24+Custom->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     100                      0
+  Actual Incorrect                   100                      0
+  True Positives=100  True Negatives=0  False Positives=100  False Negatives=0
+  [C6f EC3D+REHAB24+Custom->UI-PRMD OOD] Majority class prediction check: model predicted correct=200 times, incorrect=0 times
+
+======================================================================
+C8f EC3D+REHAB24+UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\protogcn_ood_c8_ec3d_rehab24_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C8f EC3D+REHAB24+UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      20                    142
+  Actual Incorrect                    24                     96
+  True Positives=20  True Negatives=96  False Positives=24  False Negatives=142
+  [C8f EC3D+REHAB24+UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=44 times, incorrect=238 times
+
+======================================================================
+C9f EC3D+Custom+UI-PRMD->REHAB24 OOD
+======================================================================
+  Checkpoint : output\protogcn_ood_c9_ec3d_custom_uiprmd_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for C9f EC3D+Custom+UI-PRMD->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     0                     61
+  True Positives=0  True Negatives=61  False Positives=0  False Negatives=130
+  [C9f EC3D+Custom+UI-PRMD->REHAB24 OOD] Majority class prediction check: model predicted correct=0 times, incorrect=191 times
+
+======================================================================
+C10f REHAB24+Custom+UI-PRMD->EC3D OOD
+======================================================================
+  Checkpoint : output\protogcn_ood_c10_rehab24_custom_uiprmd_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for C10f REHAB24+Custom+UI-PRMD->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [C10f REHAB24+Custom+UI-PRMD->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+C7f Custom+UI-PRMD->EC3D OOD
+======================================================================
+  Checkpoint : output\protogcn_ood_c7_custom_uiprmd_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for C7f Custom+UI-PRMD->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [C7f Custom+UI-PRMD->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+
+######################################################################
+# SkateFormer
+######################################################################
+
+======================================================================
+B1g EC3D->REHAB24 OOD
+======================================================================
+  Checkpoint : output\skateformer_ood_b1_ec3d_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for B1g EC3D->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     0                     61
+  True Positives=0  True Negatives=61  False Positives=0  False Negatives=130
+  [B1g EC3D->REHAB24 OOD] Majority class prediction check: model predicted correct=0 times, incorrect=191 times
+
+======================================================================
+B2g EC3D->Custom OOD
+======================================================================
+  Checkpoint : output\skateformer_ood_b2_ec3d_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for B2g EC3D->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     147                     15
+  Actual Incorrect                   116                      4
+  True Positives=147  True Negatives=4  False Positives=116  False Negatives=15
+  [B2g EC3D->Custom OOD] Majority class prediction check: model predicted correct=263 times, incorrect=19 times
+
+======================================================================
+B3g REHAB24->EC3D OOD
+======================================================================
+  Checkpoint : output\skateformer_ood_b3_rehab24_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for B3g REHAB24->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      41                      0
+  Actual Incorrect                   100                      0
+  True Positives=41  True Negatives=0  False Positives=100  False Negatives=0
+  [B3g REHAB24->EC3D OOD] Majority class prediction check: model predicted correct=141 times, incorrect=0 times
+
+======================================================================
+B4g REHAB24->Custom OOD
+======================================================================
+  Checkpoint : output\skateformer_ood_b4_rehab24_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for B4g REHAB24->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     156                      6
+  Actual Incorrect                   111                      9
+  True Positives=156  True Negatives=9  False Positives=111  False Negatives=6
+  [B4g REHAB24->Custom OOD] Majority class prediction check: model predicted correct=267 times, incorrect=15 times
+
+======================================================================
+B5g Custom->EC3D OOD
+======================================================================
+  Checkpoint : output\skateformer_ood_b5_custom_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for B5g Custom->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [B5g Custom->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+B6g Custom->REHAB24 OOD
+======================================================================
+  Checkpoint : output\skateformer_ood_b6_custom_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for B6g Custom->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     130                      0
+  Actual Incorrect                    61                      0
+  True Positives=130  True Negatives=0  False Positives=61  False Negatives=0
+  [B6g Custom->REHAB24 OOD] Majority class prediction check: model predicted correct=191 times, incorrect=0 times
+
+======================================================================
+B7g UI-PRMD->EC3D OOD
+======================================================================
+  Checkpoint : output\skateformer_ood_b7_uiprmd_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for B7g UI-PRMD->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     2                     98
+  True Positives=0  True Negatives=98  False Positives=2  False Negatives=41
+  [B7g UI-PRMD->EC3D OOD] Majority class prediction check: model predicted correct=2 times, incorrect=139 times
+
+======================================================================
+B8g UI-PRMD->REHAB24 OOD
+======================================================================
+  Checkpoint : output\skateformer_ood_b8_uiprmd_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for B8g UI-PRMD->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     125                      5
+  Actual Incorrect                    61                      0
+  True Positives=125  True Negatives=0  False Positives=61  False Negatives=5
+  [B8g UI-PRMD->REHAB24 OOD] Majority class prediction check: model predicted correct=186 times, incorrect=5 times
+
+======================================================================
+B9g UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\skateformer_ood_b9_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for B9g UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      14                    148
+  Actual Incorrect                    16                    104
+  True Positives=14  True Negatives=104  False Positives=16  False Negatives=148
+  [B9g UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=30 times, incorrect=252 times
+
+======================================================================
+B10g EC3D->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\skateformer_ood_b10_ec3d_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for B10g EC3D->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     100                      0
+  Actual Incorrect                    92                      8
+  True Positives=100  True Negatives=8  False Positives=92  False Negatives=0
+  [B10g EC3D->UI-PRMD OOD] Majority class prediction check: model predicted correct=192 times, incorrect=8 times
+
+======================================================================
+B11g REHAB24->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\skateformer_ood_b11_rehab24_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for B11g REHAB24->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    100
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=100
+  [B11g REHAB24->UI-PRMD OOD] Majority class prediction check: model predicted correct=0 times, incorrect=200 times
+
+======================================================================
+B12g Custom->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\skateformer_ood_b12_custom_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for B12g Custom->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     100                      0
+  Actual Incorrect                    99                      1
+  True Positives=100  True Negatives=1  False Positives=99  False Negatives=0
+  [B12g Custom->UI-PRMD OOD] Majority class prediction check: model predicted correct=199 times, incorrect=1 times
+
+======================================================================
+C1g EC3D+REHAB24->Custom OOD
+======================================================================
+  Checkpoint : output\skateformer_ood_c1_ec3d_rehab24_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C1g EC3D+REHAB24->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      40                    122
+  Actual Incorrect                    31                     89
+  True Positives=40  True Negatives=89  False Positives=31  False Negatives=122
+  [C1g EC3D+REHAB24->Custom OOD] Majority class prediction check: model predicted correct=71 times, incorrect=211 times
+
+======================================================================
+C2g EC3D+Custom->REHAB24 OOD
+======================================================================
+  Checkpoint : output\skateformer_ood_c2_ec3d_custom_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for C2g EC3D+Custom->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     115                     15
+  Actual Incorrect                    58                      3
+  True Positives=115  True Negatives=3  False Positives=58  False Negatives=15
+  [C2g EC3D+Custom->REHAB24 OOD] Majority class prediction check: model predicted correct=173 times, incorrect=18 times
+
+======================================================================
+C3g REHAB24+Custom->EC3D OOD
+======================================================================
+  Checkpoint : output\skateformer_ood_c3_rehab24_custom_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for C3g REHAB24+Custom->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      40                      1
+  Actual Incorrect                    90                     10
+  True Positives=40  True Negatives=10  False Positives=90  False Negatives=1
+  [C3g REHAB24+Custom->EC3D OOD] Majority class prediction check: model predicted correct=130 times, incorrect=11 times
+
+======================================================================
+C4g EC3D+UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\skateformer_ood_c4_ec3d_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C4g EC3D+UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    162
+  Actual Incorrect                     0                    120
+  True Positives=0  True Negatives=120  False Positives=0  False Negatives=162
+  [C4g EC3D+UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=0 times, incorrect=282 times
+
+======================================================================
+C5g REHAB24+UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\skateformer_ood_c5_rehab24_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C5g REHAB24+UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     162                      0
+  Actual Incorrect                   120                      0
+  True Positives=162  True Negatives=0  False Positives=120  False Negatives=0
+  [C5g REHAB24+UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=282 times, incorrect=0 times
+
+======================================================================
+C6g EC3D+REHAB24+Custom->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\skateformer_ood_c6_ec3d_rehab24_custom_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for C6g EC3D+REHAB24+Custom->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    100
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=100
+  [C6g EC3D+REHAB24+Custom->UI-PRMD OOD] Majority class prediction check: model predicted correct=0 times, incorrect=200 times
+
+======================================================================
+C8g EC3D+REHAB24+UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\skateformer_ood_c8_ec3d_rehab24_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C8g EC3D+REHAB24+UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     162                      0
+  Actual Incorrect                   120                      0
+  True Positives=162  True Negatives=0  False Positives=120  False Negatives=0
+  [C8g EC3D+REHAB24+UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=282 times, incorrect=0 times
+
+======================================================================
+C9g EC3D+Custom+UI-PRMD->REHAB24 OOD
+======================================================================
+  Checkpoint : output\skateformer_ood_c9_ec3d_custom_uiprmd_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for C9g EC3D+Custom+UI-PRMD->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      93                     37
+  Actual Incorrect                    45                     16
+  True Positives=93  True Negatives=16  False Positives=45  False Negatives=37
+  [C9g EC3D+Custom+UI-PRMD->REHAB24 OOD] Majority class prediction check: model predicted correct=138 times, incorrect=53 times
+
+======================================================================
+C10g REHAB24+Custom+UI-PRMD->EC3D OOD
+======================================================================
+  Checkpoint : output\skateformer_ood_c10_rehab24_custom_uiprmd_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for C10g REHAB24+Custom+UI-PRMD->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     2                     98
+  True Positives=0  True Negatives=98  False Positives=2  False Negatives=41
+  [C10g REHAB24+Custom+UI-PRMD->EC3D OOD] Majority class prediction check: model predicted correct=2 times, incorrect=139 times
+
+======================================================================
+C7g Custom+UI-PRMD->EC3D OOD
+======================================================================
+  Checkpoint : output\skateformer_ood_c7_custom_uiprmd_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for C7g Custom+UI-PRMD->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      41                      0
+  Actual Incorrect                   100                      0
+  True Positives=41  True Negatives=0  False Positives=100  False Negatives=0
+  [C7g Custom+UI-PRMD->EC3D OOD] Majority class prediction check: model predicted correct=141 times, incorrect=0 times
+
+
+######################################################################
+# HyperFormer
+######################################################################
+
+======================================================================
+B1h EC3D->REHAB24 OOD
+======================================================================
+  Checkpoint : output\hyperformer_ood_b1_ec3d_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for B1h EC3D->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     0                     61
+  True Positives=0  True Negatives=61  False Positives=0  False Negatives=130
+  [B1h EC3D->REHAB24 OOD] Majority class prediction check: model predicted correct=0 times, incorrect=191 times
+
+======================================================================
+B2h EC3D->Custom OOD
+======================================================================
+  Checkpoint : output\hyperformer_ood_b2_ec3d_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for B2h EC3D->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    162
+  Actual Incorrect                     0                    120
+  True Positives=0  True Negatives=120  False Positives=0  False Negatives=162
+  [B2h EC3D->Custom OOD] Majority class prediction check: model predicted correct=0 times, incorrect=282 times
+
+======================================================================
+B3h REHAB24->EC3D OOD
+======================================================================
+  Checkpoint : output\hyperformer_ood_b3_rehab24_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for B3h REHAB24->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      41                      0
+  Actual Incorrect                   100                      0
+  True Positives=41  True Negatives=0  False Positives=100  False Negatives=0
+  [B3h REHAB24->EC3D OOD] Majority class prediction check: model predicted correct=141 times, incorrect=0 times
+
+======================================================================
+B4h REHAB24->Custom OOD
+======================================================================
+  Checkpoint : output\hyperformer_ood_b4_rehab24_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for B4h REHAB24->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    162
+  Actual Incorrect                     0                    120
+  True Positives=0  True Negatives=120  False Positives=0  False Negatives=162
+  [B4h REHAB24->Custom OOD] Majority class prediction check: model predicted correct=0 times, incorrect=282 times
+
+======================================================================
+B5h Custom->EC3D OOD
+======================================================================
+  Checkpoint : output\hyperformer_ood_b5_custom_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for B5h Custom->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      41                      0
+  Actual Incorrect                   100                      0
+  True Positives=41  True Negatives=0  False Positives=100  False Negatives=0
+  [B5h Custom->EC3D OOD] Majority class prediction check: model predicted correct=141 times, incorrect=0 times
+
+======================================================================
+B6h Custom->REHAB24 OOD
+======================================================================
+  Checkpoint : output\hyperformer_ood_b6_custom_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for B6h Custom->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     0                     61
+  True Positives=0  True Negatives=61  False Positives=0  False Negatives=130
+  [B6h Custom->REHAB24 OOD] Majority class prediction check: model predicted correct=0 times, incorrect=191 times
+
+======================================================================
+B7h UI-PRMD->EC3D OOD
+======================================================================
+  Checkpoint : output\hyperformer_ood_b7_uiprmd_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for B7h UI-PRMD->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [B7h UI-PRMD->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+B8h UI-PRMD->REHAB24 OOD
+======================================================================
+  Checkpoint : output\hyperformer_ood_b8_uiprmd_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for B8h UI-PRMD->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     0                     61
+  True Positives=0  True Negatives=61  False Positives=0  False Negatives=130
+  [B8h UI-PRMD->REHAB24 OOD] Majority class prediction check: model predicted correct=0 times, incorrect=191 times
+
+======================================================================
+B9h UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\hyperformer_ood_b9_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for B9h UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    162
+  Actual Incorrect                     0                    120
+  True Positives=0  True Negatives=120  False Positives=0  False Negatives=162
+  [B9h UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=0 times, incorrect=282 times
+
+======================================================================
+B10h EC3D->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\hyperformer_ood_b10_ec3d_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for B10h EC3D->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    100
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=100
+  [B10h EC3D->UI-PRMD OOD] Majority class prediction check: model predicted correct=0 times, incorrect=200 times
+
+======================================================================
+B11h REHAB24->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\hyperformer_ood_b11_rehab24_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for B11h REHAB24->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     100                      0
+  Actual Incorrect                   100                      0
+  True Positives=100  True Negatives=0  False Positives=100  False Negatives=0
+  [B11h REHAB24->UI-PRMD OOD] Majority class prediction check: model predicted correct=200 times, incorrect=0 times
+
+======================================================================
+B12h Custom->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\hyperformer_ood_b12_custom_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for B12h Custom->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    100
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=100
+  [B12h Custom->UI-PRMD OOD] Majority class prediction check: model predicted correct=0 times, incorrect=200 times
+
+======================================================================
+C1h EC3D+REHAB24->Custom OOD
+======================================================================
+  Checkpoint : output\hyperformer_ood_c1_ec3d_rehab24_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C1h EC3D+REHAB24->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      93                     69
+  Actual Incorrect                    53                     67
+  True Positives=93  True Negatives=67  False Positives=53  False Negatives=69
+  [C1h EC3D+REHAB24->Custom OOD] Majority class prediction check: model predicted correct=146 times, incorrect=136 times
+
+======================================================================
+C2h EC3D+Custom->REHAB24 OOD
+======================================================================
+  Checkpoint : output\hyperformer_ood_c2_ec3d_custom_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for C2h EC3D+Custom->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     0                     61
+  True Positives=0  True Negatives=61  False Positives=0  False Negatives=130
+  [C2h EC3D+Custom->REHAB24 OOD] Majority class prediction check: model predicted correct=0 times, incorrect=191 times
+
+======================================================================
+C3h REHAB24+Custom->EC3D OOD
+======================================================================
+  Checkpoint : output\hyperformer_ood_c3_rehab24_custom_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for C3h REHAB24+Custom->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [C3h REHAB24+Custom->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+C4h EC3D+UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\hyperformer_ood_c4_ec3d_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C4h EC3D+UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      82                     80
+  Actual Incorrect                    64                     56
+  True Positives=82  True Negatives=56  False Positives=64  False Negatives=80
+  [C4h EC3D+UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=146 times, incorrect=136 times
+
+======================================================================
+C5h REHAB24+UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\hyperformer_ood_c5_rehab24_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C5h REHAB24+UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    162
+  Actual Incorrect                     0                    120
+  True Positives=0  True Negatives=120  False Positives=0  False Negatives=162
+  [C5h REHAB24+UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=0 times, incorrect=282 times
+
+======================================================================
+C6h EC3D+REHAB24+Custom->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\hyperformer_ood_c6_ec3d_rehab24_custom_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for C6h EC3D+REHAB24+Custom->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    100
+  Actual Incorrect                     6                     94
+  True Positives=0  True Negatives=94  False Positives=6  False Negatives=100
+  [C6h EC3D+REHAB24+Custom->UI-PRMD OOD] Majority class prediction check: model predicted correct=6 times, incorrect=194 times
+
+======================================================================
+C8h EC3D+REHAB24+UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\hyperformer_ood_c8_ec3d_rehab24_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C8h EC3D+REHAB24+UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    162
+  Actual Incorrect                     3                    117
+  True Positives=0  True Negatives=117  False Positives=3  False Negatives=162
+  [C8h EC3D+REHAB24+UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=3 times, incorrect=279 times
+
+======================================================================
+C9h EC3D+Custom+UI-PRMD->REHAB24 OOD
+======================================================================
+  Checkpoint : output\hyperformer_ood_c9_ec3d_custom_uiprmd_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for C9h EC3D+Custom+UI-PRMD->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     2                     59
+  True Positives=0  True Negatives=59  False Positives=2  False Negatives=130
+  [C9h EC3D+Custom+UI-PRMD->REHAB24 OOD] Majority class prediction check: model predicted correct=2 times, incorrect=189 times
+
+======================================================================
+C10h REHAB24+Custom+UI-PRMD->EC3D OOD
+======================================================================
+  Checkpoint : output\hyperformer_ood_c10_rehab24_custom_uiprmd_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for C10h REHAB24+Custom+UI-PRMD->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [C10h REHAB24+Custom+UI-PRMD->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+C7h Custom+UI-PRMD->EC3D OOD
+======================================================================
+  Checkpoint : output\hyperformer_ood_c7_custom_uiprmd_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for C7h Custom+UI-PRMD->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [C7h Custom+UI-PRMD->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+
+######################################################################
+# FreqMixFormer
+######################################################################
+
+======================================================================
+B1i EC3D->REHAB24 OOD
+======================================================================
+  Checkpoint : output\freqmixformer_ood_b1_ec3d_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for B1i EC3D->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     0                     61
+  True Positives=0  True Negatives=61  False Positives=0  False Negatives=130
+  [B1i EC3D->REHAB24 OOD] Majority class prediction check: model predicted correct=0 times, incorrect=191 times
+
+======================================================================
+B2i EC3D->Custom OOD
+======================================================================
+  Checkpoint : output\freqmixformer_ood_b2_ec3d_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for B2i EC3D->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    162
+  Actual Incorrect                     0                    120
+  True Positives=0  True Negatives=120  False Positives=0  False Negatives=162
+  [B2i EC3D->Custom OOD] Majority class prediction check: model predicted correct=0 times, incorrect=282 times
+
+======================================================================
+B3i REHAB24->EC3D OOD
+======================================================================
+  Checkpoint : output\freqmixformer_ood_b3_rehab24_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for B3i REHAB24->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [B3i REHAB24->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+B4i REHAB24->Custom OOD
+======================================================================
+  Checkpoint : output\freqmixformer_ood_b4_rehab24_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for B4i REHAB24->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      99                     63
+  Actual Incorrect                    70                     50
+  True Positives=99  True Negatives=50  False Positives=70  False Negatives=63
+  [B4i REHAB24->Custom OOD] Majority class prediction check: model predicted correct=169 times, incorrect=113 times
+
+======================================================================
+B5i Custom->EC3D OOD
+======================================================================
+  Checkpoint : output\freqmixformer_ood_b5_custom_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for B5i Custom->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [B5i Custom->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+B6i Custom->REHAB24 OOD
+======================================================================
+  Checkpoint : output\freqmixformer_ood_b6_custom_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for B6i Custom->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     0                     61
+  True Positives=0  True Negatives=61  False Positives=0  False Negatives=130
+  [B6i Custom->REHAB24 OOD] Majority class prediction check: model predicted correct=0 times, incorrect=191 times
+
+======================================================================
+B7i UI-PRMD->EC3D OOD
+======================================================================
+  Checkpoint : output\freqmixformer_ood_b7_uiprmd_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for B7i UI-PRMD->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [B7i UI-PRMD->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+B8i UI-PRMD->REHAB24 OOD
+======================================================================
+  Checkpoint : output\freqmixformer_ood_b8_uiprmd_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for B8i UI-PRMD->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     0                     61
+  True Positives=0  True Negatives=61  False Positives=0  False Negatives=130
+  [B8i UI-PRMD->REHAB24 OOD] Majority class prediction check: model predicted correct=0 times, incorrect=191 times
+
+======================================================================
+B9i UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\freqmixformer_ood_b9_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for B9i UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     162                      0
+  Actual Incorrect                   120                      0
+  True Positives=162  True Negatives=0  False Positives=120  False Negatives=0
+  [B9i UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=282 times, incorrect=0 times
+
+======================================================================
+B10i EC3D->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\freqmixformer_ood_b10_ec3d_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for B10i EC3D->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    100
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=100
+  [B10i EC3D->UI-PRMD OOD] Majority class prediction check: model predicted correct=0 times, incorrect=200 times
+
+======================================================================
+B11i REHAB24->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\freqmixformer_ood_b11_rehab24_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+python : utils.py:247: FutureWarning: You 
+are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module 
+implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See 
+https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the 
+default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during 
+unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly 
+allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` 
+for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues 
+related to this experimental feature.
+At <local path>:108 char:35
++ ... _OK="TRUE"; python training\check_conf ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (<local path>...mental feature.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  model.load_state_dict(torch.load(checkpoint_path, map_location=device))
+utils.py:283: FutureWarning: You are using `torch.load` with 
+`weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to 
+construct malicious pickle data which will execute arbitrary code during unpickling (See 
+https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the 
+default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during 
+unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly 
+allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` 
+for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues 
+related to this experimental feature.
+  model.load_state_dict(torch.load(checkpoint_path, map_location=device))
+utils.py:326: FutureWarning: You are using `torch.load` with 
+`weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to 
+construct malicious pickle data which will execute arbitrary code during unpickling (See 
+https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the 
+default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during 
+unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly 
+allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` 
+for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues 
+related to this experimental feature.
+  model.load_state_dict(torch.load(checkpoint_path, map_location=device))
+utils.py:326: FutureWarning: You are using `torch.load` with 
+`weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to 
+construct malicious pickle data which will execute arbitrary code during unpickling (See 
+https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the 
+default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during 
+unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly 
+allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` 
+for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues 
+related to this experimental feature.
+  model.load_state_dict(torch.load(checkpoint_path, map_location=device))
+utils.py:365: FutureWarning: You are using `torch.load` with 
+`weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to 
+construct malicious pickle data which will execute arbitrary code during unpickling (See 
+https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the 
+default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during 
+unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly 
+allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` 
+for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues 
+related to this experimental feature.
+  model.load_state_dict(torch.load(checkpoint_path, map_location=device))
+utils.py:403: FutureWarning: You are using `torch.load` with 
+`weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to 
+construct malicious pickle data which will execute arbitrary code during unpickling (See 
+https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the 
+default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during 
+unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly 
+allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` 
+for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues 
+related to this experimental feature.
+  model.load_state_dict(torch.load(checkpoint_path, map_location=device))
+utils.py:477: FutureWarning: You are using `torch.load` with 
+`weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to 
+construct malicious pickle data which will execute arbitrary code during unpickling (See 
+https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the 
+default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during 
+unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly 
+allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` 
+for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues 
+related to this experimental feature.
+  model.load_state_dict(torch.load(checkpoint_path, map_location=device))
+site-packages\timm\models\layers\__init__.py:49: FutureWarning: Importing from 
+timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+site-packages\torch\functional.py:513: UserWarning: torch.meshgrid: in an upcoming 
+release, it will be required to pass the indexing argument. (Triggered internally at 
+C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\aten\src\ATen\native\TensorShape.cpp:3610.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+utils.py:512: FutureWarning: You are using `torch.load` with 
+`weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to 
+construct malicious pickle data which will execute arbitrary code during unpickling (See 
+https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the 
+default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during 
+unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly 
+allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` 
+for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues 
+related to this experimental feature.
+  model.load_state_dict(torch.load(checkpoint_path, map_location=device))
+utils.py:441: FutureWarning: You are using `torch.load` with 
+`weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to 
+construct malicious pickle data which will execute arbitrary code during unpickling (See 
+https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the 
+default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during 
+unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly 
+allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` 
+for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues 
+related to this experimental feature.
+  model.load_state_dict(torch.load(checkpoint_path, map_location=device))
+utils.py:550: FutureWarning: You are using `torch.load` with 
+`weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to 
+construct malicious pickle data which will execute arbitrary code during unpickling (See 
+https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the 
+default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during 
+unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly 
+allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` 
+for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues 
+related to this experimental feature.
+  model.load_state_dict(torch.load(checkpoint_path, map_location=device))
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for B11i REHAB24->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    100
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=100
+  [B11i REHAB24->UI-PRMD OOD] Majority class prediction check: model predicted correct=0 times, incorrect=200 times
+
+======================================================================
+B12i Custom->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\freqmixformer_ood_b12_custom_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for B12i Custom->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    100
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=100
+  [B12i Custom->UI-PRMD OOD] Majority class prediction check: model predicted correct=0 times, incorrect=200 times
+
+======================================================================
+C1i EC3D+REHAB24->Custom OOD
+======================================================================
+  Checkpoint : output\freqmixformer_ood_c1_ec3d_rehab24_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C1i EC3D+REHAB24->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    162
+  Actual Incorrect                     0                    120
+  True Positives=0  True Negatives=120  False Positives=0  False Negatives=162
+  [C1i EC3D+REHAB24->Custom OOD] Majority class prediction check: model predicted correct=0 times, incorrect=282 times
+
+======================================================================
+C2i EC3D+Custom->REHAB24 OOD
+======================================================================
+  Checkpoint : output\freqmixformer_ood_c2_ec3d_custom_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for C2i EC3D+Custom->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     0                     61
+  True Positives=0  True Negatives=61  False Positives=0  False Negatives=130
+  [C2i EC3D+Custom->REHAB24 OOD] Majority class prediction check: model predicted correct=0 times, incorrect=191 times
+
+======================================================================
+C3i REHAB24+Custom->EC3D OOD
+======================================================================
+  Checkpoint : output\freqmixformer_ood_c3_rehab24_custom_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for C3i REHAB24+Custom->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [C3i REHAB24+Custom->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+C4i EC3D+UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\freqmixformer_ood_c4_ec3d_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C4i EC3D+UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    162
+  Actual Incorrect                     3                    117
+  True Positives=0  True Negatives=117  False Positives=3  False Negatives=162
+  [C4i EC3D+UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=3 times, incorrect=279 times
+
+======================================================================
+C5i REHAB24+UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\freqmixformer_ood_c5_rehab24_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C5i REHAB24+UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                      23                    139
+  Actual Incorrect                    32                     88
+  True Positives=23  True Negatives=88  False Positives=32  False Negatives=139
+  [C5i REHAB24+UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=55 times, incorrect=227 times
+
+======================================================================
+C6i EC3D+REHAB24+Custom->UI-PRMD OOD
+======================================================================
+  Checkpoint : output\freqmixformer_ood_c6_ec3d_rehab24_custom_to_uiprmd.pth
+  Test data  : output\uiprmd_ood_test_data.npy
+  Test labels: output\uiprmd_ood_test_labels.npy
+
+  Confusion Matrix for C6i EC3D+REHAB24+Custom->UI-PRMD OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                     100                      0
+  Actual Incorrect                   100                      0
+  True Positives=100  True Negatives=0  False Positives=100  False Negatives=0
+  [C6i EC3D+REHAB24+Custom->UI-PRMD OOD] Majority class prediction check: model predicted correct=200 times, incorrect=0 times
+
+======================================================================
+C8i EC3D+REHAB24+UI-PRMD->Custom OOD
+======================================================================
+  Checkpoint : output\freqmixformer_ood_c8_ec3d_rehab24_uiprmd_to_custom.pth
+  Test data  : output\custom_ood_test_data.npy
+  Test labels: output\custom_ood_test_labels.npy
+
+  Confusion Matrix for C8i EC3D+REHAB24+UI-PRMD->Custom OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       1                    161
+  Actual Incorrect                     4                    116
+  True Positives=1  True Negatives=116  False Positives=4  False Negatives=161
+  [C8i EC3D+REHAB24+UI-PRMD->Custom OOD] Majority class prediction check: model predicted correct=5 times, incorrect=277 times
+
+======================================================================
+C9i EC3D+Custom+UI-PRMD->REHAB24 OOD
+======================================================================
+  Checkpoint : output\freqmixformer_ood_c9_ec3d_custom_uiprmd_to_rehab24.pth
+  Test data  : output\rehab24_ood_test_data.npy
+  Test labels: output\rehab24_ood_test_labels.npy
+
+  Confusion Matrix for C9i EC3D+Custom+UI-PRMD->REHAB24 OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                    130
+  Actual Incorrect                     0                     61
+  True Positives=0  True Negatives=61  False Positives=0  False Negatives=130
+  [C9i EC3D+Custom+UI-PRMD->REHAB24 OOD] Majority class prediction check: model predicted correct=0 times, incorrect=191 times
+
+======================================================================
+C10i REHAB24+Custom+UI-PRMD->EC3D OOD
+======================================================================
+  Checkpoint : output\freqmixformer_ood_c10_rehab24_custom_uiprmd_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for C10i REHAB24+Custom+UI-PRMD->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [C10i REHAB24+Custom+UI-PRMD->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+C7i Custom+UI-PRMD->EC3D OOD
+======================================================================
+  Checkpoint : output\freqmixformer_ood_c7_custom_uiprmd_to_ec3d.pth
+  Test data  : output\ec3d_ood_test_data.npy
+  Test labels: output\ec3d_ood_test_labels.npy
+
+  Confusion Matrix for C7i Custom+UI-PRMD->EC3D OOD:
+                       Predicted Correct    Predicted Incorrect
+  Actual Correct                       0                     41
+  Actual Incorrect                     0                    100
+  True Positives=0  True Negatives=100  False Positives=0  False Negatives=41
+  [C7i Custom+UI-PRMD->EC3D OOD] Majority class prediction check: model predicted correct=0 times, incorrect=141 times
+
+======================================================================
+Done ù 198 confusion matrices printed, 0 skipped.
+======================================================================
