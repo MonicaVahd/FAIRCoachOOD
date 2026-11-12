@@ -10,6 +10,7 @@ The 3rd International Workshop on Multimedia Computing for Health and Medicine (
 
 [![Paper](https://img.shields.io/badge/Paper-ACM%20DL-blue)](https://dl.acm.org/doi/10.1145/3840471.3842592)
 [![Project page](https://img.shields.io/badge/Project-skeletoneqa.github.io-green)](https://skeletoneqa.github.io/)
+[![Models](https://img.shields.io/badge/Models-Hugging%20Face-yellow)](https://huggingface.co/collections/MonicaVahd/skeletoneqa-ood-benchmark-weights)
 
 ![Benchmark pipeline](assets/fig1_pipeline.png)
 
