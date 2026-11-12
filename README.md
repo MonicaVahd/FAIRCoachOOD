@@ -105,6 +105,7 @@ the stored result file is in [`docs/PAPER_TO_CODE.md`](docs/PAPER_TO_CODE.md); i
 
 Training from scratch needs the datasets. The paper's numbers come from single runs, so re-running is not expected to reproduce
 individual cells exactly (see `docs/KNOWN_DIFFERENCES.md`, D7).
+Trained checkpoints: [SkeletonEQA collection on Hugging Face](https://huggingface.co/collections/MonicaVahd/skeletoneqa-ood-benchmark-weights)
 
 ## Models
 
