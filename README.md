@@ -6,7 +6,7 @@
 
 <sup>1</sup>MCRLab, University of Ottawa &nbsp;&nbsp; <sup>2</sup>Queen's University
 
-The 3rd International Workshop on Multimedia Computing for Health and Medicine (MCHM '26), ACM Multimedia 2026, Rio de Janeiro
+The 3rd International Workshop on Multimedia Computing for Health and Medicine (MCHM '26), ACM Multimedia 2026, Rio de Janeiro 
 
 [![Paper](https://img.shields.io/badge/Paper-ACM%20DL-blue)](https://dl.acm.org/doi/10.1145/3840471.3842592)
 [![Project page](https://img.shields.io/badge/Project-skeletoneqa.github.io-green)](https://skeletoneqa.github.io/)
