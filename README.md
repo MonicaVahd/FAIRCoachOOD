@@ -14,13 +14,13 @@ The 3rd International Workshop on Multimedia Computing for Health and Medicine (
 
 ![Benchmark pipeline](assets/fig1_pipeline.png)
 
-*Figure 1 of the paper: four datasets are unified under one preprocessing protocol and evaluated with nine skeleton models under IID, OOD and Mixed conditions. Collapse is detected from per-class prediction counts.*
+*Figure 1 of the paper: four datasets are unified under one preprocessing protocol and evaluated with nine skeleton models under IID, OOD, and Mixed conditions. We detect collapse from per-class prediction counts.*
 
 We benchmark nine skeleton-based models (six GCNs and three transformers) on squat quality classification across four
 datasets (EC3D, REHAB24-6, UI-PRMD and a Custom YouTube collection), under within-distribution (IID), out-of-distribution
 (OOD) and pooled (Mixed) protocols. Of 198 OOD transfer experiments (9 models × 22 conditions), 154 (77.8%) end in full or
 partial classifier collapse: the model assigns (almost) every sample to one class, which accuracy and macro-F1 can hide.
-Collapse is detected from the per-class prediction counts of the confusion matrix. In the pooled Mixed condition no model collapses.
+We detect collapse from the per-class prediction counts in the confusion matrix. In the pooled Mixed condition, no model collapses.
 
 | Model | Collapsed OOD conditions (of 22) | Mean OOD macro-F1 [%] |
 |:--|--:|--:|
@@ -34,8 +34,8 @@ Collapse is detected from the per-class prediction counts of the confusion matri
 | HyperFormer | 19 (86.4%) | 32.59 |
 | FreqMixFormer | 20 (90.9%) | 33.91 |
 
-Collapse counts are from Table 4 and mean macro-F1 values from Table 7 of the paper. The nine means span only 4.1 points, and
-after Bonferroni correction no pair of models differs significantly (one of 36 pairs is significant before correction, HD-GCN vs
+Collapsed counts are from Table 4, and the mean macro-F1 values are from Table 7 of the paper. The nine means span only 4.1 points, and
+after Bonferroni correction, no pair of models differs significantly (one of 36 pairs is significant before correction, HD-GCN vs
 HyperFormer, p = 0.046). All experiments are single runs, so the results are exploratory.
 
 ## Read this first
@@ -49,7 +49,7 @@ HyperFormer, p = 0.046). All experiments are single runs, so the results are exp
    **B1, B3, B7, B8, B10, B11** (single-source OOD).
 3. **No data, derived tensors or checkpoints are included.** `results/` holds aggregate counts and metrics only.
 4. **Three of the nine models are not included** (CTR-GCN, InfoGCN, FreqMixFormer; licence reasons, see [Models](#models)).
-5. **Restructured and only partly tested.** The scripts were restructured for this release and tested on synthetic data only.
+5. **Restructured and only partly tested.** The scripts were restructured for this release and tested only on synthetic data.
    No trainer or converter has been run end to end on the public datasets in this layout, and `requirements.txt` has not been
    installed from scratch in a clean Python 3.8 environment. The commands in `docs/reproduction.md` are therefore unverified.
 6. **Differences between the paper and the stored code or results** are listed with evidence in
@@ -57,9 +57,9 @@ HyperFormer, p = 0.046). All experiments are single runs, so the results are exp
 
 ## What this repository contains
 
-- `preprocessing/`: the converters for EC3D, REHAB24-6 and UI-PRMD (18-joint OpenPose format, hip centring, torso scaling).
-- `models/`: six of the nine model implementations, with their upstream licences.
-- `training/`: the original trainer scripts used for the paper, the LOSO and OOD split builders, the collapse check and the
+- `preprocessing/`: the converters for EC3D, REHAB24-6, and UI-PRMD (18-joint OpenPose format, hip centering, torso scaling).
+- `models/`: six of the nine model implementations, with their upstream licenses.
+- `training/`: the original trainer scripts used for the paper, the LOSO and OOD split builders, the collapse check, and the
   UI-PRMD rerun script.
 - `splits/`: a script that writes the splits as integer index lists (no data).
 - `eval/`: the scripts behind the collapse, macro-F1 and Wilcoxon results.
@@ -70,7 +70,7 @@ Not included: datasets, derived tensors, checkpoints, the Custom YouTube materia
 
 ## Datasets (not distributed here)
 
-Obtain each dataset from its authors; see the references in the paper. Licences are listed as far as they were checked.
+Obtain each dataset from its authors; see the paper's references. Licenses are listed as far as we could determine.
 
 | Dataset (paper reference) | Public-only conditions that use it | Licence |
 |:--|:--|:--|
@@ -83,7 +83,7 @@ Details: [`docs/data_access.md`](docs/data_access.md).
 
 ## Install
 
-Python 3.8 (the environment the results were produced in; newer versions are untested).
+Python 3.8 (the environment used to produce the results; newer versions are untested).
 
 ```bash
 conda create -n ood-bench python=3.8
@@ -123,8 +123,8 @@ Trained checkpoints: [SkeletonEQA collection on Hugging Face](https://huggingfac
 | FreqMixFormer | https://github.com/wenhanwu95/FreqMixFormer | no licence file | no |
 
 `scripts/fetch_upstream.py` can download the upstream files of the three excluded models at a pinned commit. It only downloads:
-the paper's configuration changes are not applied and `models/builders.py` still raises an error for these three models. The
-commit used for the paper is unknown; see the header of the script. Licence texts are in `THIRD_PARTY_LICENSES/` and notices in `NOTICE`.
+The paper's configuration changes are not applied, and `models/builders.py` still raises an error for these three models. The
+The commit used for the paper is unknown; see the script header. License texts are in `THIRD_PARTY_LICENSES/` and notices in `NOTICE`.
 
 ## Repository layout
 
@@ -145,7 +145,7 @@ assets/         Figure 1 of the paper
 
 ## Licence
 
-Own code: Apache License 2.0 ([LICENSE](LICENSE)). Third-party model code keeps its upstream licence
+Own code: Apache License 2.0 ([LICENSE](LICENSE)). Third-party model code keeps its upstream license
 ([THIRD_PARTY_LICENSES/](THIRD_PARTY_LICENSES/), [NOTICE](NOTICE)); datasets keep their own licences (see above).
 Figure 1 is taken from the paper, which is published under CC BY 4.0.
 
